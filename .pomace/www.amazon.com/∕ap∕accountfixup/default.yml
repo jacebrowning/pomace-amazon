@@ -1,0 +1,15 @@
+active_locators:
+  - mode: ''
+    value: ''
+    uses: 0
+inactive_locators:
+  - mode: ''
+    value: ''
+    uses: 0
+actions:
+  - verb: ''
+    name: ''
+    locators:
+      - mode: ''
+        value: ''
+        uses: 0

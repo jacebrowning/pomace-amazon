@@ -1,0 +1,27 @@
+actions:
+  - verb: fill
+    name: email
+    locators:
+      - mode: id
+        value: ap_email
+        uses: 0
+  - verb: click
+    name: continue
+    locators:
+      - mode: id
+        value: continue
+        uses: 0
+  - verb: ''
+    name: ''
+    locators:
+      - mode: ''
+        value: ''
+        uses: 0
+active_locators:
+  - mode: id
+    value: continue
+    uses: 0
+inactive_locators:
+  - mode: ''
+    value: ''
+    uses: 0

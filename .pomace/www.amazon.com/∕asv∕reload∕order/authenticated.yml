@@ -1,0 +1,27 @@
+inactive_locators:
+  - mode: text
+    value: Sign in
+    uses: 0
+actions:
+  - verb: fill
+    name: amount
+    locators:
+      - mode: id
+        value: asv-manual-reload-amount
+        uses: 0
+  - verb: click
+    name: reload
+    locators:
+      - mode: id
+        value: form-submit-button
+        uses: 0
+  - verb: ''
+    name: ''
+    locators:
+      - mode: ''
+        value: ''
+        uses: 0
+active_locators:
+  - mode: ''
+    value: ''
+    uses: 0

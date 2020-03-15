@@ -1,0 +1,32 @@
+inactive_locators:
+  - mode: text
+    value: Sign in
+    uses: 0
+active_locators:
+  - mode: css
+    value: '[aria-label="Verify card"]'
+    uses: 0
+actions:
+  - verb: fill
+    name: credit_card
+    locators:
+      - mode: css
+        value: '[maxlength="30"]'
+        uses: 0
+  - verb: click
+    name: verify_card
+    locators:
+      - mode: css
+        value: '[aria-label="Verify card"]'
+  - verb: click
+    name: reload
+    locators:
+      - mode: id
+        value: form-submit-button
+        uses: 0
+  - verb: ""
+    name: ""
+    locators:
+      - mode: ""
+        value: ""
+        uses: 0
