@@ -4,13 +4,13 @@ actions:
     locators:
       - mode: id
         value: ap_email
-        uses: 0
+        uses: 15
   - verb: click
     name: continue
     locators:
       - mode: id
         value: continue
-        uses: 0
+        uses: 15
   - verb: ''
     name: ''
     locators:

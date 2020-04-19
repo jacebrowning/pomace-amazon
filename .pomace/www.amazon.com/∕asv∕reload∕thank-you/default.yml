@@ -4,7 +4,7 @@ actions:
     locators:
       - mode: partial_text
         value: Reload your balance again
-        uses: 0
+        uses: 9
   - verb: ''
     name: ''
     locators:

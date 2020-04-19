@@ -2,19 +2,22 @@ inactive_locators:
   - mode: text
     value: Sign in
     uses: 0
+  - mode: css
+    value: '[aria-label="Verify card"]'
+    uses: 0
 actions:
   - verb: fill
     name: amount
     locators:
       - mode: id
         value: asv-manual-reload-amount
-        uses: 0
+        uses: 16
   - verb: click
     name: reload
     locators:
       - mode: id
         value: form-submit-button
-        uses: 0
+        uses: 14
   - verb: ''
     name: ''
     locators:

@@ -8,7 +8,7 @@ actions:
     locators:
       - mode: text
         value: Hello, Sign in
-        uses: 0
+        uses: 17
   - verb: ''
     name: ''
     locators:
