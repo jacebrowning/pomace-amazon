@@ -1,6 +1,7 @@
 active_locators:
   - mode: text
     value: Sign in
+    index: 0
     uses: 0
 actions:
   - verb: click
@@ -8,12 +9,14 @@ actions:
     locators:
       - mode: text
         value: Hello, Sign in
-        uses: 17
+        index: 0
+        uses: 18
   - verb: ''
     name: ''
     locators:
       - mode: ''
         value: ''
+        index: 0
         uses: 0
 inactive_locators:
   -

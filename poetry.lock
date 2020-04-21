@@ -202,26 +202,20 @@ version = "0.8.0"
 
 [[package]]
 category = "main"
-description = ""
-develop = true
+description = "Dynamic page objects for browser automation."
 name = "pomace"
 optional = false
-python-versions = "^3.7"
-version = "0.0.1"
+python-versions = ">=3.7,<4.0"
+version = "0.0.2"
 
 [package.dependencies]
-bullet = "^2.1.0"
-cleo = "~0.7.6"
-datafiles = "~0.8"
-minilog = "^1.5"
-parse = "^1.14.0"
-splinter = "~0.12.0"
-webdriver_manager = "^1.8.2"
-
-[package.source]
-reference = ""
-type = "directory"
-url = "../pomace"
+bullet = ">=2.1.0,<3.0.0"
+cleo = ">=0.7.6,<0.8.0"
+datafiles = ">=0.8,<0.9"
+minilog = ">=1.5,<2.0"
+parse = ">=1.14.0,<2.0.0"
+splinter = ">=0.12.0,<0.13.0"
+webdriver_manager = ">=1.8.2,<2.0.0"
 
 [[package]]
 category = "main"
@@ -386,7 +380,7 @@ crayons = "*"
 requests = "*"
 
 [metadata]
-content-hash = "dcf90a60002cdee0bdc582a26cd8d3e8376b012eab3a4a2a3fa6a7e3d684aaa0"
+content-hash = "04c1cba3666eaa76acc5d32190a76aaae0730c0beb59d1cf8ba9bf8663fd5d7c"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -468,7 +462,10 @@ pathspec = [
     {file = "pathspec-0.8.0-py2.py3-none-any.whl", hash = "sha256:7d91249d21749788d07a2d0f94147accd8f845507400749ea19c1ec9054a12b0"},
     {file = "pathspec-0.8.0.tar.gz", hash = "sha256:da45173eb3a6f2a5a487efba21f050af2b41948be6ab52b6a1e3ff22bb8b7061"},
 ]
-pomace = []
+pomace = [
+    {file = "pomace-0.0.2-py3-none-any.whl", hash = "sha256:aefde7b9d1775d94a9cbade6f3bbe825f6c9220ae0e9316417d5907fe4784210"},
+    {file = "pomace-0.0.2.tar.gz", hash = "sha256:cf5cc5711252a837061801aedd7d72b5bf73ea8771cc032f10e7099ac2fcede1"},
+]
 pylev = [
     {file = "pylev-1.3.0-py2.py3-none-any.whl", hash = "sha256:1d29a87beb45ebe1e821e7a3b10da2b6b2f4c79b43f482c2df1a1f748a6e114e"},
     {file = "pylev-1.3.0.tar.gz", hash = "sha256:063910098161199b81e453025653ec53556c1be7165a9b7c50be2f4d57eae1c3"},

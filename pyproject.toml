@@ -9,12 +9,15 @@ authors = ["Jace Browning <jacebrowning@gmail.com>"]
 
 python = "^3.7"
 
-pomace = { path = "../pomace" }
-minilog = "^1.5"
+pomace = "=0.0.2"
 
 [tool.poetry.dev-dependencies]
 
 black = {version = "^19.10b0", allow-prereleases = true}
+
+[tool.poetry.scripts]
+
+reload-amazon-balance = 'amazon:reload_balance'
 
 [build-system]
 
