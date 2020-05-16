@@ -2,7 +2,7 @@ active_locators:
   - mode: text
     value: Sign in
     index: 0
-    uses: 0
+    score: 0.0
 actions:
   - verb: click
     name: sign_in
@@ -10,13 +10,13 @@ actions:
       - mode: text
         value: Hello, Sign in
         index: 0
-        uses: 18
+        score: 0.125
   - verb: ''
     name: ''
     locators:
       - mode: ''
         value: ''
         index: 0
-        uses: 0
+        score: 0.0
 inactive_locators:
   -

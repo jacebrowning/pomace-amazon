@@ -4,18 +4,22 @@ actions:
     locators:
       - mode: partial_text
         value: Reload your balance again
-        uses: 9
+        index: 0
+        score: 0.7450580596923828
   - verb: ''
     name: ''
     locators:
       - mode: ''
         value: ''
-        uses: 0
+        index: 0
+        score: 0.0
 active_locators:
   - mode: ''
     value: ''
-    uses: 0
+    index: 0
+    score: 0.0
 inactive_locators:
   - mode: ''
     value: ''
-    uses: 0
+    index: 0
+    score: 0.0

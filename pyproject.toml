@@ -1,7 +1,7 @@
 [tool.poetry]
 
 name = "amazon"
-version = "0.0"
+version = "0.0.1"
 description = ""
 authors = ["Jace Browning <jacebrowning@gmail.com>"]
 
@@ -9,7 +9,7 @@ authors = ["Jace Browning <jacebrowning@gmail.com>"]
 
 python = "^3.7"
 
-pomace = "=0.0.2"
+pomace = "0.0.10"
 
 [tool.poetry.dev-dependencies]
 
@@ -17,7 +17,7 @@ black = {version = "^19.10b0", allow-prereleases = true}
 
 [tool.poetry.scripts]
 
-reload-amazon-balance = 'amazon:reload_balance'
+reload-amazon-balance = 'amazon:cli'
 
 [build-system]
 

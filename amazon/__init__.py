@@ -1,5 +1,16 @@
-import pomace
 import log
+import pomace
+import sys
+
+
+def cli():
+    try:
+        reload_balance(*sys.argv[1:])
+    except KeyboardInterrupt:
+        sys.exit(0)
+    except Exception as e:
+        log.exception(e)
+        breakpoint()
 
 
 def reload_balance(amount: str, repeat: str):
