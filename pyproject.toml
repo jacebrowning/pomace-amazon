@@ -9,7 +9,7 @@ authors = ["Jace Browning <jacebrowning@gmail.com>"]
 
 python = "^3.7"
 
-pomace = "0.0.10"
+pomace = "0.0.14"
 
 [tool.poetry.dev-dependencies]
 
