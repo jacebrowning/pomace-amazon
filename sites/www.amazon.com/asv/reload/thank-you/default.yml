@@ -5,7 +5,15 @@ actions:
       - mode: partial_text
         value: Reload your balance again
         index: 0
-        score: 0.7450580596923828
+        score: 1.0
+      - mode: text
+        value: Reload Again
+        index: 0
+        score: 0.5
+      - mode: text
+        value: Reload again
+        index: 0
+        score: 0.5
   - verb: ''
     name: ''
     locators:

@@ -14,14 +14,42 @@ actions:
       - mode: id
         value: asv-manual-reload-amount
         index: 0
-        score: 0.7450580596923828
+        score: 1.0
+      - mode: name
+        value: amount
+        index: 0
+        score: 0.5
+      - mode: name
+        value: amount
+        index: 0
+        score: 0.5
+      - mode: id
+        value: amount
+        index: 0
+        score: 0.5
+      - mode: id
+        value: amount
+        index: 0
+        score: 0.5
+      - mode: css
+        value: '[aria-label="Amount"]'
+        index: 0
+        score: 0.5
   - verb: click
     name: reload
     locators:
       - mode: id
         value: form-submit-button
         index: 0
-        score: 0.7450580596923828
+        score: 1.0
+      - mode: text
+        value: Reload
+        index: 0
+        score: 0.5
+      - mode: text
+        value: Reload
+        index: 0
+        score: 0.5
   - verb: ''
     name: ''
     locators:
