@@ -15,27 +15,27 @@ actions:
       - mode: css
         value: '[maxlength="30"]'
         index: 0
+        score: 0.1562
+      - mode: name
+        value: card
+        index: 0
         score: 0.125
       - mode: name
         value: card
         index: 0
-        score: 0.25
-      - mode: name
-        value: card
-        index: 0
-        score: 0.25
+        score: 0.125
       - mode: id
         value: card
         index: 0
-        score: 0.25
+        score: 0.125
       - mode: id
         value: card
         index: 0
-        score: 0.25
+        score: 0.125
       - mode: css
         value: '[aria-label="Card"]'
         index: 0
-        score: 0.25
+        score: 0.125
   - verb: click
     name: verify_card
     locators:
@@ -50,22 +50,22 @@ actions:
       - mode: text
         value: Verify card
         index: 0
-        score: 0.625
+        score: 0.7812
   - verb: click
     name: reload
     locators:
       - mode: id
         value: form-submit-button
         index: 0
+        score: 0.1562
+      - mode: text
+        value: Reload
+        index: 0
         score: 0.125
       - mode: text
         value: Reload
         index: 0
-        score: 0.25
-      - mode: text
-        value: Reload
-        index: 0
-        score: 0.25
+        score: 0.125
   - verb: ''
     name: ''
     locators:

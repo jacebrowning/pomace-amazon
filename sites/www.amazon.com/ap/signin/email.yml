@@ -9,7 +9,7 @@ actions:
       - mode: name
         value: email
         index: 0
-        score: 0.625
+        score: 0.9765
       - mode: name
         value: email
         index: 0
@@ -32,15 +32,15 @@ actions:
       - mode: id
         value: continue
         index: 0
-        score: 0.1562
+        score: 0.2441
       - mode: text
         value: Continue
         index: 0
-        score: 0.25
+        score: 0.125
       - mode: text
         value: Continue
         index: 0
-        score: 0.25
+        score: 0.125
   - verb: ''
     name: ''
     locators:

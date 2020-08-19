@@ -1,7 +1,7 @@
 [tool.poetry]
 
 name = "amazon"
-version = "0.0.2"
+version = "0.1"
 description = ""
 authors = ["Jace Browning <jacebrowning@gmail.com>"]
 
@@ -9,7 +9,7 @@ authors = ["Jace Browning <jacebrowning@gmail.com>"]
 
 python = "^3.7"
 
-pomace = "0.2b5"
+pomace = "=0.3b6"
 
 [tool.poetry.dev-dependencies]
 

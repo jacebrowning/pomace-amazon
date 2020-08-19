@@ -1,15 +1,54 @@
 active_locators:
-  - mode: ''
-    value: ''
-    uses: 0
+  - mode: ""
+    value: ""
+    index: 0
+    score: 0.0
 inactive_locators:
-  - mode: ''
-    value: ''
-    uses: 0
+  - mode: ""
+    value: ""
+    index: 0
+    score: 0.0
 actions:
-  - verb: ''
-    name: ''
+  - verb: ""
+    name: ""
     locators:
-      - mode: ''
-        value: ''
-        uses: 0
+      - mode: ""
+        value: ""
+        index: 0
+        score: 0.0
+  - verb: fill
+    name: amount
+    locators:
+      - mode: ""
+        value: ""
+        index: 0
+        score: 0.25
+      - mode: name
+        value: amount
+        index: 0
+        score: 0.25
+      - mode: name
+        value: amount
+        index: 0
+        score: 0.25
+      - mode: id
+        value: amount
+        index: 0
+        score: 0.25
+      - mode: id
+        value: amount
+        index: 0
+        score: 0.25
+      - mode: css
+        value: '[aria-label="Amount"]'
+        index: 0
+        score: 0.25
+      - mode: id
+        value: Amount
+        index: 0
+        score: 0.25
+  - verb: click
+    name: not_now
+    locators:
+      - mode: text
+        value: Not now

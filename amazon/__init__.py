@@ -21,6 +21,9 @@ def reload_balance(amount: str, repeat: str):
     page = page.click_sign_in().fill_email(settings.email).click_continue()
     page = page.fill_password(settings.password).click_sign_in()
 
+    if "Add mobile number" in page:
+        page = page.click_not_now()
+
     for index in range(int(repeat)):
         log.info(f"Selecting amount ${amount}")
         page = page.fill_amount(amount)
