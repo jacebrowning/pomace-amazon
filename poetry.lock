@@ -602,7 +602,7 @@ requests = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "79f50e878e03f4a6c12e0afed94eafe333c3ca750dbb97d253d265e57267603a"
+content-hash = "d76b33356a889a0b6f50a09d53ff4af7cae1ac7e928813de731014edce71936f"
 
 [metadata.files]
 appdirs = [

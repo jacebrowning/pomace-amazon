@@ -1,3 +1,4 @@
+import bullet
 import log
 import pomace
 import sys
@@ -20,6 +21,11 @@ def reload_balance(amount: str, repeat: str):
     log.info(f"Logging in as {settings.email}")
     page = page.click_sign_in().fill_email(settings.email).click_continue()
     page = page.fill_password(settings.password).click_sign_in()
+
+    if "One Time Password" in page:
+        log.info("One Time Password (OTP) required")
+        otp = bullet.Input(prompt="otp: ").launch()
+        page = page.fill_otp(otp).click_sign_in()
 
     if "Add mobile number" in page:
         page = page.click_not_now()
