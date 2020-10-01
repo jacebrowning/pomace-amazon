@@ -2,8 +2,9 @@
 
 name = "amazon"
 version = "0.1"
-description = ""
+description = "Reload your Amazon balance automatically."
 authors = ["Jace Browning <jacebrowning@gmail.com>"]
+license = "MIT"
 
 [tool.poetry.dependencies]
 
