@@ -163,7 +163,7 @@ colorama = "*"
 
 [[package]]
 name = "datafiles"
-version = "0.10"
+version = "0.11b4"
 description = "File-based ORM for dataclasses."
 category = "main"
 optional = false
@@ -172,7 +172,7 @@ python-versions = ">=3.7,<4.0"
 [package.dependencies]
 cached_property = ">=1.5,<2.0"
 classproperties = ">=0.1.3,<0.2.0"
-minilog = ">=1.6,<2.0"
+minilog = ">=2.0b1,<3.0"
 parse = ">=1.12,<2.0"
 PyYAML = ">=5.2,<6.0"
 "ruamel.yaml" = ">=0.16.10,<0.17.0"
@@ -284,7 +284,7 @@ testing = ["Django (<3.1)", "colorama", "docopt", "pytest (>=3.9.0,<5.0.0)"]
 
 [[package]]
 name = "minilog"
-version = "1.6"
+version = "2.0"
 description = "Minimalistic wrapper for Python logging."
 category = "main"
 optional = false
@@ -354,7 +354,7 @@ python-versions = "*"
 
 [[package]]
 name = "pomace"
-version = "0.3b6"
+version = "0.3"
 description = "Dynamic page objects for browser automation."
 category = "main"
 optional = false
@@ -364,14 +364,15 @@ python-versions = ">=3.7,<4.0"
 beautifulsoup4 = ">=4.8.2,<5.0.0"
 bullet = ">=2.1.0,<3.0.0"
 cleo = ">=0.7.6,<0.8.0"
-datafiles = ">=0.10,<0.11"
+datafiles = "0.11b4"
 faker = ">=4.1.1,<5.0.0"
 inflection = ">=0.4.0,<0.5.0"
 ipython = ">=7.12.0,<8.0.0"
-minilog = ">=1.6,<2.0"
+minilog = ">=2.0b2,<3.0"
 parse = ">=1.14.0,<2.0.0"
 splinter = ">=0.12.0,<0.13.0"
 webdriver_manager = ">=2.5.0,<3.0.0"
+zipcodes = ">=1.1.2,<2.0.0"
 
 [[package]]
 name = "prompt-toolkit"
@@ -608,10 +609,18 @@ configparser = "*"
 crayons = "*"
 requests = "*"
 
+[[package]]
+name = "zipcodes"
+version = "1.1.2"
+description = "No-SQLite U.S. zipcode validation Python package, ready for use in AWS Lambda"
+category = "main"
+optional = false
+python-versions = "*"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "1a54780278a5dd2440858e1470d930d98ac72f90ed6ae93e6ed13175fa1c0e72"
+content-hash = "771a8aeb9209c50b9f6093c9a217598eda8fb4a34f2926d9ad9539f27779c70f"
 
 [metadata.files]
 appdirs = [
@@ -632,7 +641,6 @@ beautifulsoup4 = [
     {file = "beautifulsoup4-4.9.2.tar.gz", hash = "sha256:1edf5e39f3a5bc6e38b235b369128416c7239b34f692acccececb040233032a1"},
 ]
 black = [
-    {file = "black-20.8b1-py3-none-any.whl", hash = "sha256:70b62ef1527c950db59062cda342ea224d772abdf6adc58b86a45421bab20a6b"},
     {file = "black-20.8b1.tar.gz", hash = "sha256:1c02557aa099101b9d21496f8a914e9ed2222ef70336404eeeac8edba836fbea"},
 ]
 bullet = [
@@ -679,8 +687,8 @@ crayons = [
     {file = "crayons-0.4.0.tar.gz", hash = "sha256:bd33b7547800f2cfbd26b38431f9e64b487a7de74a947b0fafc89b45a601813f"},
 ]
 datafiles = [
-    {file = "datafiles-0.10-py3-none-any.whl", hash = "sha256:f7950bb8a31a3c8dcaf073dc948c298d822a7197363a50015b44e6524bc80558"},
-    {file = "datafiles-0.10.tar.gz", hash = "sha256:7120c5c65ea1091aa8367eb268054aa5a2b9c05d3c56eaf690c8a5eb555db30b"},
+    {file = "datafiles-0.11b4-py3-none-any.whl", hash = "sha256:56f0ac323b0b4b160b58cc73ff361b8bc2e3a61e9ba12928c6a77aa4322cb916"},
+    {file = "datafiles-0.11b4.tar.gz", hash = "sha256:c0434d7680db36f5800a82a3da7f590d674123275f00fc70a94990727fbdd35b"},
 ]
 decorator = [
     {file = "decorator-4.4.2-py2.py3-none-any.whl", hash = "sha256:41fa54c2a0cc4ba648be4fd43cff00aedf5b9465c9bf18d64325bc225f08f760"},
@@ -715,8 +723,8 @@ jedi = [
     {file = "jedi-0.17.2.tar.gz", hash = "sha256:86ed7d9b750603e4ba582ea8edc678657fb4007894a12bcf6f4bb97892f31d20"},
 ]
 minilog = [
-    {file = "minilog-1.6-py3-none-any.whl", hash = "sha256:e999fffce1912560974e9360b1aa0b970f0a2f3dba3b50ffacd5ffa68b27d84c"},
-    {file = "minilog-1.6.tar.gz", hash = "sha256:0dbbe6d8db9e45b3fb1e1975cf8d7f6b8a22446a6e6879992d0dbda3c7431da7"},
+    {file = "minilog-2.0-py3-none-any.whl", hash = "sha256:891ad346bdd63aee4c210faa688497f7ba412cf52a54fb6cba6bf511a34a5138"},
+    {file = "minilog-2.0.tar.gz", hash = "sha256:58499302bca86cf507eb3c3dfa3853de9389bfde275ba5155bdc3b4551175918"},
 ]
 mypy-extensions = [
     {file = "mypy_extensions-0.4.3-py2.py3-none-any.whl", hash = "sha256:090fedd75945a69ae91ce1303b5824f428daf5a028d2f6ab8a299250a846f15d"},
@@ -746,8 +754,8 @@ pickleshare = [
     {file = "pickleshare-0.7.5.tar.gz", hash = "sha256:87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca"},
 ]
 pomace = [
-    {file = "pomace-0.3b6-py3-none-any.whl", hash = "sha256:ab46dd91b440b35afbcce9c394d6ad0058b6328fbe78a81f50ab3d017dea6b57"},
-    {file = "pomace-0.3b6.tar.gz", hash = "sha256:6209c5f056bb76f5f7f6420e74cedfa4a1823b3d1e050587be3eafc9cfea6fe4"},
+    {file = "pomace-0.3-py3-none-any.whl", hash = "sha256:5c9a764318d8f89c14f2806ee760201abefb6f536871ac07e124d78b34369533"},
+    {file = "pomace-0.3.tar.gz", hash = "sha256:0bfcbad34e6c82ca72d67bd529c2bb3d0c78cb48b1a7b58fa62b3090eb631612"},
 ]
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.7-py3-none-any.whl", hash = "sha256:83074ee28ad4ba6af190593d4d4c607ff525272a504eb159199b6dd9f950c950"},
@@ -907,4 +915,8 @@ wcwidth = [
 ]
 webdriver-manager = [
     {file = "webdriver_manager-2.5.3-py2.py3-none-any.whl", hash = "sha256:469db6cfa5458359045789c99b3909e0e690e122f27f54cba126954eb2dab5c9"},
+]
+zipcodes = [
+    {file = "zipcodes-1.1.2-py2.py3-none-any.whl", hash = "sha256:66b69078c7336b1cd32d032d34251d9e961a8842a9add5e08dfcb628d8c4bc5e"},
+    {file = "zipcodes-1.1.2.tar.gz", hash = "sha256:20673593a25c0b5c04ed5c1c0ed68be88e96ae79b0f1d12946809084165e5afb"},
 ]
