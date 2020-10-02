@@ -1,0 +1,18 @@
+language: python
+python:
+  - 3.7
+
+before_install:
+  - curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+  - source $HOME/.poetry/env
+
+install:
+  - make install
+
+script:
+  - make ci
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never

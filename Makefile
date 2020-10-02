@@ -1,3 +1,6 @@
+.PHONY: all
+all: install
+
 .PHONY: install
 install: poetry.lock
 	poetry install
@@ -5,6 +8,17 @@ install: poetry.lock
 poetry.lock: pyproject.toml
 	poetry lock
 	@ touch $@
+
+.PHONY: ci
+ci: format
+
+.PHONY: format
+format: install
+	poetry run isort amazon
+	poetry run black amazon
+ifdef CI
+	git diff --exit-code
+endif
 
 .PHONY: run
 run: install

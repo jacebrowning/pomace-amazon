@@ -15,7 +15,8 @@ bullet = "^2.2.0"
 
 [tool.poetry.dev-dependencies]
 
-black = {version = "^19.10b0", allow-prereleases = true}
+black = "=20.8b1"
+isort = "=5.5.1"
 
 [tool.poetry.scripts]
 

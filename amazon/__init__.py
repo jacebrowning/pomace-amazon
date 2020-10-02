@@ -1,7 +1,8 @@
+import sys
+
 import bullet
 import log
 import pomace
-import sys
 
 
 def cli():
