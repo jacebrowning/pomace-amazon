@@ -15,7 +15,7 @@ actions:
       - mode: css
         value: '[maxlength="30"]'
         index: 0
-        score: 0.1562
+        score: 0.1953
       - mode: name
         value: card
         index: 0
@@ -50,14 +50,14 @@ actions:
       - mode: text
         value: Verify card
         index: 0
-        score: 0.7812
+        score: 0.9765
   - verb: click
     name: reload
     locators:
       - mode: id
         value: form-submit-button
         index: 0
-        score: 0.1562
+        score: 0.1953
       - mode: text
         value: Reload
         index: 0

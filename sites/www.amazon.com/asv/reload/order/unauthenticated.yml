@@ -10,7 +10,7 @@ actions:
       - mode: text
         value: Hello, Sign in
         index: 0
-        score: 0.2441
+        score: 0.3814
       - mode: text
         value: Sign In
         index: 0
