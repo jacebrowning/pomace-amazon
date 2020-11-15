@@ -6,7 +6,7 @@ install: poetry.lock
 	poetry install
 
 poetry.lock: pyproject.toml
-	poetry lock
+	poetry lock --no-update
 	@ touch $@
 
 .PHONY: ci

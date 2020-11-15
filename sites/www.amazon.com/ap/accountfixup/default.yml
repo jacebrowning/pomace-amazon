@@ -57,10 +57,12 @@ actions:
       - mode: text
         value: Not Now
         index: 0
-        score: 0.25
+        score: 0.125
       - mode: text
         value: Not now
         index: 0
-        score: 0.25
+        score: 0.125
       - mode: id
         value: ap-account-fixup-phone-skip-link
+        index: 0
+        score: 0.1

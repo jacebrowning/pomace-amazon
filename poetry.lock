@@ -148,7 +148,7 @@ python-versions = ">=3.6"
 
 [package.extras]
 docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "jaraco.test (>=3.2.0)", "pytest-black (>=0.3.7)", "pytest-mypy"]
+testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "jaraco.test (>=3.2.0)", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
 [[package]]
 name = "crayons"
@@ -279,7 +279,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 parso = ">=0.7.0,<0.8.0"
 
 [package.extras]
-qa = ["flake8 (3.7.9)"]
+qa = ["flake8 (==3.7.9)"]
 testing = ["Django (<3.1)", "colorama", "docopt", "pytest (>=3.9.0,<5.0.0)"]
 
 [[package]]
@@ -354,7 +354,7 @@ python-versions = "*"
 
 [[package]]
 name = "pomace"
-version = "0.3"
+version = "0.4"
 description = "Dynamic page objects for browser automation."
 category = "main"
 optional = false
@@ -452,7 +452,7 @@ urllib3 = ">=1.21.1,<1.25.0 || >1.25.0,<1.25.1 || >1.25.1,<1.26"
 
 [package.extras]
 security = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)"]
-socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7)", "win-inet-pton"]
+socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
 
 [[package]]
 name = "ruamel.yaml"
@@ -586,7 +586,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
 [package.extras]
 brotli = ["brotlipy (>=0.6.0)"]
 secure = ["certifi", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "pyOpenSSL (>=0.14)", "ipaddress"]
-socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7,<2.0)"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [[package]]
 name = "wcwidth"
@@ -620,7 +620,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "771a8aeb9209c50b9f6093c9a217598eda8fb4a34f2926d9ad9539f27779c70f"
+content-hash = "a3b63bb0927cfe31274b86d28fb031a5b3cfce51d1fa10a345feb926329460d2"
 
 [metadata.files]
 appdirs = [
@@ -753,8 +753,8 @@ pickleshare = [
     {file = "pickleshare-0.7.5.tar.gz", hash = "sha256:87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca"},
 ]
 pomace = [
-    {file = "pomace-0.3-py3-none-any.whl", hash = "sha256:5c9a764318d8f89c14f2806ee760201abefb6f536871ac07e124d78b34369533"},
-    {file = "pomace-0.3.tar.gz", hash = "sha256:0bfcbad34e6c82ca72d67bd529c2bb3d0c78cb48b1a7b58fa62b3090eb631612"},
+    {file = "pomace-0.4-py3-none-any.whl", hash = "sha256:df7f4248f0db2a4254903a4d3ec6dd4ecc64fe1ba0b4b27693e63c94b99fcce6"},
+    {file = "pomace-0.4.tar.gz", hash = "sha256:6394e3d189f49205473f2d620a072775610dad4c2644a8db2e9422bfa4e122b1"},
 ]
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.8-py3-none-any.whl", hash = "sha256:7debb9a521e0b1ee7d2fe96ee4bd60ef03c6492784de0547337ca4433e46aa63"},
