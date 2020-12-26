@@ -5,56 +5,56 @@ actions:
       - mode: id
         value: ap_email
         index: 0
-        score: 0.125
+        uses: 1
       - mode: name
         value: email
         index: 0
-        score: 1.0
+        uses: 0
       - mode: name
         value: email
         index: 0
-        score: 0.5
+        uses: 0
       - mode: id
         value: email
         index: 0
-        score: 0.5
+        uses: 0
       - mode: id
         value: email
         index: 0
-        score: 0.5
+        uses: 0
       - mode: css
         value: '[aria-label="Email"]'
         index: 0
-        score: 0.5
+        uses: 0
   - verb: click
     name: continue
     locators:
       - mode: id
         value: continue
         index: 0
-        score: 0.4768
+        uses: 1
       - mode: text
         value: Continue
         index: 0
-        score: 0.125
+        uses: 0
       - mode: text
         value: Continue
         index: 0
-        score: 0.125
+        uses: 0
   - verb: ''
     name: ''
     locators:
       - mode: ''
         value: ''
         index: 0
-        score: 0.0
+        uses: 0
 active_locators:
   - mode: id
     value: continue
     index: 0
-    score: 0.0
+    uses: 0
 inactive_locators:
   - mode: ''
     value: ''
     index: 0
-    score: 0.0
+    uses: 0
