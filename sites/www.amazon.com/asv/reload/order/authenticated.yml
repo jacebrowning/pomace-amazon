@@ -1,12 +1,15 @@
-inactive_locators:
-  - mode: text
-    value: Sign in
-    index: 0
-    uses: 0
-  - mode: css
-    value: '[aria-label="Verify card"]'
-    index: 0
-    uses: 0
+locators:
+  inclusions:
+    -
+  exclusions:
+    - mode: text
+      value: Sign in
+      index: 1
+      uses: 2
+    - mode: css
+      value: '[aria-label="Verify card"]'
+      index: 1
+      uses: 3
 actions:
   - verb: fill
     name: amount
@@ -14,7 +17,7 @@ actions:
       - mode: id
         value: asv-manual-reload-amount
         index: 0
-        uses: 1
+        uses: 11
       - mode: name
         value: amount
         index: 0
@@ -41,7 +44,7 @@ actions:
       - mode: id
         value: form-submit-button
         index: 0
-        uses: 1
+        uses: 11
       - mode: text
         value: Reload
         index: 0
@@ -57,8 +60,10 @@ actions:
         value: ''
         index: 0
         uses: 0
-active_locators:
-  - mode: ''
-    value: ''
-    index: 0
-    uses: 0
+  - verb: type
+    name: tab
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0

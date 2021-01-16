@@ -33,7 +33,7 @@ def reload_balance(amount: str, repeat: str):
 
     for index in range(int(repeat)):
         log.info(f"Selecting amount ${amount}")
-        page = page.fill_amount(amount)
+        page = page.fill_amount(amount).type_tab()
 
         assert f"Reload ${amount}" in page
         log.info("Reloading balance")

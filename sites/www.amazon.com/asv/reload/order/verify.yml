@@ -1,13 +1,14 @@
-inactive_locators:
-  - mode: text
-    value: Sign in
-    index: 0
-    uses: 0
-active_locators:
-  - mode: css
-    value: '[aria-label="Verify card"]'
-    index: 0
-    uses: 0
+locators:
+  exclusions:
+    - mode: text
+      value: Sign in
+      index: 0
+      uses: 0
+  inclusions:
+    - mode: css
+      value: '[aria-label="Verify card"]'
+      index: 0
+      uses: 2
 actions:
   - verb: fill
     name: card
@@ -15,7 +16,7 @@ actions:
       - mode: css
         value: '[maxlength="30"]'
         index: 0
-        uses: 1
+        uses: 3
       - mode: name
         value: card
         index: 0
@@ -42,7 +43,7 @@ actions:
       - mode: css
         value: '[aria-label="Verify card"]'
         index: 0
-        uses: 1
+        uses: 3
       - mode: text
         value: Verify Card
         index: 0
@@ -57,7 +58,7 @@ actions:
       - mode: id
         value: form-submit-button
         index: 0
-        uses: 1
+        uses: 3
       - mode: text
         value: Reload
         index: 0
