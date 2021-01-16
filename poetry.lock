@@ -172,7 +172,7 @@ colorama = "*"
 
 [[package]]
 name = "datafiles"
-version = "0.11b4"
+version = "0.11.1"
 description = "File-based ORM for dataclasses."
 category = "main"
 optional = false
@@ -181,7 +181,7 @@ python-versions = ">=3.7,<4.0"
 [package.dependencies]
 cached_property = ">=1.5,<2.0"
 classproperties = ">=0.1.3,<0.2.0"
-minilog = ">=2.0b1,<3.0"
+minilog = ">=2.0,<3.0"
 parse = ">=1.12,<2.0"
 PyYAML = ">=5.2,<6.0"
 "ruamel.yaml" = ">=0.16.10,<0.17.0"
@@ -209,6 +209,18 @@ python-dateutil = ">=2.4"
 text-unidecode = "1.3"
 
 [[package]]
+name = "gitman"
+version = "2.3b2"
+description = "A language-agnostic dependency manager using Git."
+category = "main"
+optional = false
+python-versions = ">=3.7,<4.0"
+
+[package.dependencies]
+datafiles = ">=0.11,<0.12"
+minilog = ">=2.0,<3.0"
+
+[[package]]
 name = "idna"
 version = "2.10"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -226,7 +238,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "ipython"
-version = "7.18.1"
+version = "7.19.0"
 description = "IPython: Productive Interactive Computing"
 category = "main"
 optional = false
@@ -363,7 +375,7 @@ python-versions = "*"
 
 [[package]]
 name = "pomace"
-version = "0.5b3"
+version = "0.6.8"
 description = "Dynamic page objects for browser automation."
 category = "main"
 optional = false
@@ -373,13 +385,15 @@ python-versions = ">=3.7,<4.0"
 beautifulsoup4 = ">=4.8.2,<5.0.0"
 bullet = ">=2.1.0,<3.0.0"
 cleo = ">=0.8.1,<0.9.0"
-datafiles = "0.11b4"
+datafiles = ">=0.11.1,<0.12.0"
 faker = ">=4.1.1,<5.0.0"
+gitman = ">=2.3b2,<3.0"
 inflection = ">=0.4.0,<0.5.0"
-ipython = ">=7.12.0,<8.0.0"
-minilog = ">=2.0b2,<3.0"
+ipython = ">=7.19.0,<8.0.0"
+jedi = "0.17.2"
+minilog = ">=2.0,<3.0"
 parse = ">=1.14.0,<2.0.0"
-splinter = ">=0.12.0,<0.13.0"
+splinter = ">=0.14.0,<0.15.0"
 webdriver_manager = ">=2.5.0,<3.0.0"
 zipcodes = ">=1.1.2,<2.0.0"
 
@@ -515,7 +529,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "splinter"
-version = "0.12.0"
+version = "0.14.0"
 description = "browser abstraction for web acceptance testing"
 category = "main"
 optional = false
@@ -629,7 +643,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "8c0bd23e5c3f7c02f696d3df96c3e54de0e066bcd9f0cf64cfbfe3bc4f9870c0"
+content-hash = "5595d3dfd59abfa2b0030cd4ca30b6769b4d01fcc2f287702522f16b019983da"
 
 [metadata.files]
 appdirs = [
@@ -700,8 +714,8 @@ crayons = [
     {file = "crayons-0.4.0.tar.gz", hash = "sha256:bd33b7547800f2cfbd26b38431f9e64b487a7de74a947b0fafc89b45a601813f"},
 ]
 datafiles = [
-    {file = "datafiles-0.11b4-py3-none-any.whl", hash = "sha256:56f0ac323b0b4b160b58cc73ff361b8bc2e3a61e9ba12928c6a77aa4322cb916"},
-    {file = "datafiles-0.11b4.tar.gz", hash = "sha256:c0434d7680db36f5800a82a3da7f590d674123275f00fc70a94990727fbdd35b"},
+    {file = "datafiles-0.11.1-py3-none-any.whl", hash = "sha256:6a587ac1d67ac51e7ef0c2efe08121927d079964d0ab9d8fad204fb560002dc1"},
+    {file = "datafiles-0.11.1.tar.gz", hash = "sha256:99e70b84394129a41f5faeb15e4e8b41ab07fd8abd39cd2733e6dce663ff59c0"},
 ]
 decorator = [
     {file = "decorator-4.4.2-py2.py3-none-any.whl", hash = "sha256:41fa54c2a0cc4ba648be4fd43cff00aedf5b9465c9bf18d64325bc225f08f760"},
@@ -710,6 +724,10 @@ decorator = [
 faker = [
     {file = "Faker-4.14.0-py3-none-any.whl", hash = "sha256:a7a36c3c657f06bd1e3e3821b9480f2a92017d8a26e150e464ab6b97743cbc92"},
     {file = "Faker-4.14.0.tar.gz", hash = "sha256:30afa8f564350770373f299d2d267bff42aaba699a7ae0a3b6f378b2a8170569"},
+]
+gitman = [
+    {file = "gitman-2.3b2-py3-none-any.whl", hash = "sha256:86dd884cb67604650c979943be6d0e63c7e0cf0c4d2198848cb217d26cbe9e21"},
+    {file = "gitman-2.3b2.tar.gz", hash = "sha256:627a9fb77e9d9574f998f7261677bda2be2321564a536a8046a2c010743e71d0"},
 ]
 idna = [
     {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},
@@ -720,8 +738,8 @@ inflection = [
     {file = "inflection-0.4.0.tar.gz", hash = "sha256:32a5c3341d9583ec319548b9015b7fbdf8c429cbcb575d326c33ae3a0e90d52c"},
 ]
 ipython = [
-    {file = "ipython-7.18.1-py3-none-any.whl", hash = "sha256:2e22c1f74477b5106a6fb301c342ab8c64bb75d702e350f05a649e8cb40a0fb8"},
-    {file = "ipython-7.18.1.tar.gz", hash = "sha256:a331e78086001931de9424940699691ad49dfb457cea31f5471eae7b78222d5e"},
+    {file = "ipython-7.19.0-py3-none-any.whl", hash = "sha256:c987e8178ced651532b3b1ff9965925bfd445c279239697052561a9ab806d28f"},
+    {file = "ipython-7.19.0.tar.gz", hash = "sha256:cbb2ef3d5961d44e6a963b9817d4ea4e1fa2eb589c371a470fed14d8d40cbd6a"},
 ]
 ipython-genutils = [
     {file = "ipython_genutils-0.2.0-py2.py3-none-any.whl", hash = "sha256:72dd37233799e619666c9f639a9da83c34013a73e8bbc79a7a6348d93c61fab8"},
@@ -767,8 +785,8 @@ pickleshare = [
     {file = "pickleshare-0.7.5.tar.gz", hash = "sha256:87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca"},
 ]
 pomace = [
-    {file = "pomace-0.5b3-py3-none-any.whl", hash = "sha256:16bfb606bf902c6b18a7927f59247eaf13afae7e97cad94b995398d5ea568f87"},
-    {file = "pomace-0.5b3.tar.gz", hash = "sha256:7af0e71c31cbafb15e285b47eaabbd077e599bbd2e134ed5535858a7584c0ca2"},
+    {file = "pomace-0.6.8-py3-none-any.whl", hash = "sha256:598005858f56744349cee2b48e680895b67edc0f3aedbc144d3e59f393176b7e"},
+    {file = "pomace-0.6.8.tar.gz", hash = "sha256:f3ca240835c360733ba6baab89a9421871730737ea7cd2acb9851351b7df985a"},
 ]
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.8-py3-none-any.whl", hash = "sha256:7debb9a521e0b1ee7d2fe96ee4bd60ef03c6492784de0547337ca4433e46aa63"},
@@ -888,8 +906,8 @@ soupsieve = [
     {file = "soupsieve-2.0.1.tar.gz", hash = "sha256:a59dc181727e95d25f781f0eb4fd1825ff45590ec8ff49eadfd7f1a537cc0232"},
 ]
 splinter = [
-    {file = "splinter-0.12.0-py2-none-any.whl", hash = "sha256:df74fa5a0916e05026d8d8ed997577e18a14d5d45e920a4895e87dc86e813241"},
-    {file = "splinter-0.12.0.tar.gz", hash = "sha256:96bfb1e8a1fbc48f5d507ed8f6a87dca2d7b973093d09a668abb57caff57365d"},
+    {file = "splinter-0.14.0-py3-none-any.whl", hash = "sha256:7e5e69c5b76ada909283465cdc3636e2632f7e557932ce96ab9c0432b0b32f7f"},
+    {file = "splinter-0.14.0.tar.gz", hash = "sha256:459e39e7a9f7572db6f1cdb5fdc5ccfc6404f021dccb969ee6287be2386a40db"},
 ]
 text-unidecode = [
     {file = "text-unidecode-1.3.tar.gz", hash = "sha256:bad6603bb14d279193107714b288be206cac565dfa49aa5b105294dd5c4aab93"},

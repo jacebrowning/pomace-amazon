@@ -1,8 +1,11 @@
-active_locators:
-  - mode: text
-    value: Sign in
-    index: 0
-    uses: 0
+locators:
+  inclusions:
+    - mode: text
+      value: Sign in
+      index: 1
+      uses: 2
+  exclusions:
+    -
 actions:
   - verb: click
     name: sign_in
@@ -10,7 +13,7 @@ actions:
       - mode: text
         value: Hello, Sign in
         index: 0
-        uses: 1
+        uses: 3
       - mode: text
         value: Sign In
         index: 0
@@ -26,5 +29,3 @@ actions:
         value: ''
         index: 0
         uses: 0
-inactive_locators:
-  -
