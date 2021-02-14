@@ -5,7 +5,7 @@ actions:
       - mode: partial_text
         value: Reload your balance again
         index: 0
-        uses: 11
+        uses: 21
       - mode: text
         value: Reload Again
         index: 0

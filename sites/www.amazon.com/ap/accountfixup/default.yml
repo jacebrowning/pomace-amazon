@@ -1,13 +1,3 @@
-active_locators:
-  - mode: ''
-    value: ''
-    index: 0
-    score: 0.0
-inactive_locators:
-  - mode: ''
-    value: ''
-    index: 0
-    score: 0.0
 actions:
   - verb: ''
     name: ''
@@ -15,54 +5,65 @@ actions:
       - mode: ''
         value: ''
         index: 0
-        score: 0.0
+        uses: 0
   - verb: fill
     name: amount
     locators:
       - mode: ''
         value: ''
         index: 0
-        score: 0.125
+        uses: 0
       - mode: name
         value: amount
         index: 0
-        score: 0.125
+        uses: 0
       - mode: name
         value: amount
         index: 0
-        score: 0.125
+        uses: 0
       - mode: id
         value: amount
         index: 0
-        score: 0.125
+        uses: 0
       - mode: id
         value: amount
         index: 0
-        score: 0.125
+        uses: 0
       - mode: css
         value: '[aria-label="Amount"]'
         index: 0
-        score: 0.125
+        uses: 0
       - mode: id
         value: Amount
         index: 0
-        score: 0.125
+        uses: 0
   - verb: click
     name: not_now
     locators:
       - mode: text
         value: Not now
         index: 0
-        score: 0.0
+        uses: -1
       - mode: text
         value: Not Now
         index: 0
-        score: 0.125
+        uses: -1
       - mode: text
         value: Not now
         index: 0
-        score: 0.125
+        uses: -1
       - mode: id
         value: ap-account-fixup-phone-skip-link
         index: 0
-        score: 0.1
+        uses: 1
+locators:
+  inclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0
+  exclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0

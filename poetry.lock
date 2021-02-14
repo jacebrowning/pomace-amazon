@@ -172,7 +172,7 @@ colorama = "*"
 
 [[package]]
 name = "datafiles"
-version = "0.11.1"
+version = "0.12b4"
 description = "File-based ORM for dataclasses."
 category = "main"
 optional = false
@@ -238,7 +238,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "ipython"
-version = "7.19.0"
+version = "7.20.0"
 description = "IPython: Productive Interactive Computing"
 category = "main"
 optional = false
@@ -249,7 +249,7 @@ appnope = {version = "*", markers = "sys_platform == \"darwin\""}
 backcall = "*"
 colorama = {version = "*", markers = "sys_platform == \"win32\""}
 decorator = "*"
-jedi = ">=0.10"
+jedi = ">=0.16"
 pexpect = {version = ">4.3", markers = "sys_platform != \"win32\""}
 pickleshare = "*"
 prompt-toolkit = ">=2.0.0,<3.0.0 || >3.0.0,<3.0.1 || >3.0.1,<3.1.0"
@@ -375,7 +375,7 @@ python-versions = "*"
 
 [[package]]
 name = "pomace"
-version = "0.6.8"
+version = "0.6.12"
 description = "Dynamic page objects for browser automation."
 category = "main"
 optional = false
@@ -385,12 +385,11 @@ python-versions = ">=3.7,<4.0"
 beautifulsoup4 = ">=4.8.2,<5.0.0"
 bullet = ">=2.1.0,<3.0.0"
 cleo = ">=0.8.1,<0.9.0"
-datafiles = ">=0.11.1,<0.12.0"
+datafiles = ">=0.12b4,<0.13.0"
 faker = ">=4.1.1,<5.0.0"
 gitman = ">=2.3b2,<3.0"
 inflection = ">=0.4.0,<0.5.0"
-ipython = ">=7.19.0,<8.0.0"
-jedi = "0.17.2"
+ipython = ">=7.20.0,<8.0.0"
 minilog = ">=2.0,<3.0"
 parse = ">=1.14.0,<2.0.0"
 splinter = ">=0.14.0,<0.15.0"
@@ -643,7 +642,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "5595d3dfd59abfa2b0030cd4ca30b6769b4d01fcc2f287702522f16b019983da"
+content-hash = "dd2b1f4741c4ebab5f38b0b76deb6c0fb09bbfcdc20f211d883db311de79c761"
 
 [metadata.files]
 appdirs = [
@@ -714,8 +713,8 @@ crayons = [
     {file = "crayons-0.4.0.tar.gz", hash = "sha256:bd33b7547800f2cfbd26b38431f9e64b487a7de74a947b0fafc89b45a601813f"},
 ]
 datafiles = [
-    {file = "datafiles-0.11.1-py3-none-any.whl", hash = "sha256:6a587ac1d67ac51e7ef0c2efe08121927d079964d0ab9d8fad204fb560002dc1"},
-    {file = "datafiles-0.11.1.tar.gz", hash = "sha256:99e70b84394129a41f5faeb15e4e8b41ab07fd8abd39cd2733e6dce663ff59c0"},
+    {file = "datafiles-0.12b4-py3-none-any.whl", hash = "sha256:699aaab3c83419f0783c6246213de220c00eeeacca0a41a7c8a7c3a908a5716e"},
+    {file = "datafiles-0.12b4.tar.gz", hash = "sha256:30400082b18bd2b20ff57bc88c9a53da495ecb16ff158b5d6de5938ca566c1a8"},
 ]
 decorator = [
     {file = "decorator-4.4.2-py2.py3-none-any.whl", hash = "sha256:41fa54c2a0cc4ba648be4fd43cff00aedf5b9465c9bf18d64325bc225f08f760"},
@@ -738,8 +737,8 @@ inflection = [
     {file = "inflection-0.4.0.tar.gz", hash = "sha256:32a5c3341d9583ec319548b9015b7fbdf8c429cbcb575d326c33ae3a0e90d52c"},
 ]
 ipython = [
-    {file = "ipython-7.19.0-py3-none-any.whl", hash = "sha256:c987e8178ced651532b3b1ff9965925bfd445c279239697052561a9ab806d28f"},
-    {file = "ipython-7.19.0.tar.gz", hash = "sha256:cbb2ef3d5961d44e6a963b9817d4ea4e1fa2eb589c371a470fed14d8d40cbd6a"},
+    {file = "ipython-7.20.0-py3-none-any.whl", hash = "sha256:1918dea4bfdc5d1a830fcfce9a710d1d809cbed123e85eab0539259cb0f56640"},
+    {file = "ipython-7.20.0.tar.gz", hash = "sha256:1923af00820a8cf58e91d56b89efc59780a6e81363b94464a0f17c039dffff9e"},
 ]
 ipython-genutils = [
     {file = "ipython_genutils-0.2.0-py2.py3-none-any.whl", hash = "sha256:72dd37233799e619666c9f639a9da83c34013a73e8bbc79a7a6348d93c61fab8"},
@@ -785,8 +784,8 @@ pickleshare = [
     {file = "pickleshare-0.7.5.tar.gz", hash = "sha256:87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca"},
 ]
 pomace = [
-    {file = "pomace-0.6.8-py3-none-any.whl", hash = "sha256:598005858f56744349cee2b48e680895b67edc0f3aedbc144d3e59f393176b7e"},
-    {file = "pomace-0.6.8.tar.gz", hash = "sha256:f3ca240835c360733ba6baab89a9421871730737ea7cd2acb9851351b7df985a"},
+    {file = "pomace-0.6.12-py3-none-any.whl", hash = "sha256:ddeeea431b5069ce5c8d2617050e005e4a3c24559d48bf4bbfa532b56caee066"},
+    {file = "pomace-0.6.12.tar.gz", hash = "sha256:878c1fc4e05aeab7802fb5f4d962fcf8dc5df4a4c20b110c82bdbdb8e327a29b"},
 ]
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.8-py3-none-any.whl", hash = "sha256:7debb9a521e0b1ee7d2fe96ee4bd60ef03c6492784de0547337ca4433e46aa63"},
