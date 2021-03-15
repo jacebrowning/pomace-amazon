@@ -3,7 +3,7 @@ locators:
     - mode: text
       value: Sign in
       index: 1
-      uses: 3
+      uses: 4
   exclusions:
     -
 actions:
@@ -13,7 +13,7 @@ actions:
       - mode: text
         value: Hello, Sign in
         index: 0
-        uses: 4
+        uses: 5
       - mode: text
         value: Sign In
         index: 0
