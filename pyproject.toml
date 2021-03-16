@@ -19,7 +19,7 @@ isort = "=5.5.1"
 
 [tool.poetry.scripts]
 
-reload-amazon-balance = 'amazon:cli'
+reload-amazon-balance = "amazon:cli"
 
 [build-system]
 
