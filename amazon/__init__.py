@@ -33,17 +33,17 @@ def reload_balance(amount: str, repeat: str):
 
     for index in range(int(repeat)):
         log.info(f"Selecting amount ${amount}")
-        page = page.fill_amount(amount).type_tab()
+        page = page.fill_amount(amount).type_tab(wait=0)
 
         assert f"Reload ${amount}" in page
         log.info("Reloading balance")
-        page = page.click_reload(delay=2)
+        page = page.click_reload(wait=2)
 
         if "Verify your card" in page:
             log.info("Handling card verification")
-            page = page.fill_card(settings.card).click_verify_card()
+            page = page.fill_card(settings.card).click_verify_card(wait=0)
             assert f"Reload ${amount}" in page
-            page = page.click_reload(delay=2)
+            page = page.click_reload()
 
         log.info(f"Balance reloaded {index + 1} time(s)")
         page = page.click_reload_again()

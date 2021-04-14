@@ -2,10 +2,10 @@ actions:
   - verb: click
     name: reload_again
     locators:
-      - mode: partial_text
+      - mode: text (partial)
         value: Reload your balance again
         index: 0
-        uses: 31
+        uses: 38
       - mode: text
         value: Reload Again
         index: 0
