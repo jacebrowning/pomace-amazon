@@ -1,0 +1,61 @@
+locators:
+  inclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0
+  exclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0
+actions:
+  - verb: ''
+    name: ''
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+  - verb: fill
+    name: amount
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: name
+        value: amount
+        index: 0
+        uses: -1
+      - mode: name
+        value: amount
+        index: 0
+        uses: -1
+      - mode: id
+        value: amount
+        index: 0
+        uses: -1
+      - mode: id
+        value: amount
+        index: 0
+        uses: -1
+      - mode: aria-label
+        value: Amount
+        index: 0
+        uses: -1
+      - mode: css
+        value: '[placeholder="Amount"]'
+        index: 0
+        uses: -1
+      - mode: id
+        value: Amount
+        index: 0
+        uses: -1
+  - verb: type
+    name: tab
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0

@@ -23,6 +23,11 @@ def reload_balance(amount: str, repeat: str):
     page = page.click_sign_in().fill_email(settings.email).click_continue()
     page = page.fill_password(settings.password).click_sign_in()
 
+    if "notification sent" in page:
+        log.warn("Manually refresh the page after approving notification")
+        while "notification sent" in page:
+            page = pomace.auto()
+
     if "One Time Password" in page:
         log.info("One Time Password (OTP) required")
         otp = bullet.Input(prompt="otp: ").launch()

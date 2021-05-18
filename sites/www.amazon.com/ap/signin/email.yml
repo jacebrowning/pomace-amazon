@@ -5,7 +5,7 @@ actions:
       - mode: id
         value: ap_email
         index: 0
-        uses: 9
+        uses: 15
       - mode: name
         value: email
         index: 0
@@ -32,7 +32,7 @@ actions:
       - mode: id
         value: continue
         index: 0
-        uses: 9
+        uses: 15
       - mode: text
         value: Continue
         index: 0
@@ -53,6 +53,6 @@ locators:
     - mode: id
       value: continue
       index: 0
-      uses: 8
+      uses: 14
   exclusions:
     -

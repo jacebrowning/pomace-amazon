@@ -8,7 +8,7 @@ locators:
     - mode: css
       value: '[aria-label="Verify card"]'
       index: 0
-      uses: 8
+      uses: 9
 actions:
   - verb: fill
     name: card
@@ -16,7 +16,7 @@ actions:
       - mode: css
         value: '[maxlength="30"]'
         index: 0
-        uses: 9
+        uses: 10
       - mode: name
         value: card
         index: 0
@@ -43,7 +43,7 @@ actions:
       - mode: css
         value: '[aria-label="Verify card"]'
         index: 0
-        uses: 9
+        uses: 10
       - mode: text
         value: Verify Card
         index: 0
@@ -58,7 +58,7 @@ actions:
       - mode: id
         value: form-submit-button
         index: 0
-        uses: 8
+        uses: 9
       - mode: text
         value: Reload
         index: 0
