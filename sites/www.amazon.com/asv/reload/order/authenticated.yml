@@ -5,11 +5,11 @@ locators:
     - mode: text
       value: Sign in
       index: 1
-      uses: 14
+      uses: 15
     - mode: css
       value: '[aria-label="Verify card"]'
       index: 1
-      uses: 17
+      uses: 19
 actions:
   - verb: fill
     name: amount
@@ -17,7 +17,7 @@ actions:
       - mode: id
         value: asv-manual-reload-amount
         index: 0
-        uses: 51
+        uses: 61
       - mode: name
         value: amount
         index: 0
@@ -44,7 +44,7 @@ actions:
       - mode: id
         value: form-submit-button
         index: 0
-        uses: 51
+        uses: 61
       - mode: text
         value: Reload
         index: 0

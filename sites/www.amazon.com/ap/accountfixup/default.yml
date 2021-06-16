@@ -55,7 +55,7 @@ actions:
       - mode: id
         value: ap-account-fixup-phone-skip-link
         index: 0
-        uses: 2
+        uses: 3
 locators:
   inclusions:
     - mode: ''

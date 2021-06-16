@@ -172,7 +172,7 @@ colorama = "*"
 
 [[package]]
 name = "datafiles"
-version = "0.13.1"
+version = "0.15"
 description = "File-based ORM for dataclasses."
 category = "main"
 optional = false
@@ -183,7 +183,6 @@ cached_property = ">=1.5,<2.0"
 classproperties = ">=0.2,<0.3"
 minilog = ">=2.0,<3.0"
 parse = ">=1.12,<2.0"
-PyYAML = ">=5.4.1,<6.0.0"
 "ruamel.yaml" = ">=0.17.4,<0.18.0"
 tomlkit = ">=0.7,<0.8"
 typing-extensions = ">=3.7,<4.0"
@@ -236,7 +235,7 @@ dotenv = ["python-dotenv"]
 
 [[package]]
 name = "flask-api"
-version = "3.0b1"
+version = "3.0.post1"
 description = "Browsable web APIs for Flask."
 category = "main"
 optional = false
@@ -463,7 +462,7 @@ python-versions = "*"
 
 [[package]]
 name = "pomace"
-version = "0.8.1"
+version = "0.8.7"
 description = "Dynamic page objects for browser automation."
 category = "main"
 optional = false
@@ -474,10 +473,10 @@ beautifulsoup4 = ">=4.8.2,<5.0.0"
 bullet = ">=2.1,<3.0"
 cached-property = ">=1.5.2,<2.0.0"
 cleo = ">=0.8.1,<0.9.0"
-datafiles = ">=0.13b8,<0.14"
+datafiles = ">=0.15,<0.16"
 fake-useragent = ">=0.1.11,<0.2.0"
 faker = ">=4.1.1,<5.0.0"
-flask-api = ">=3.0b1,<4.0"
+flask-api = ">=3.0,<4.0"
 gitman = ">=2.3,<3.0"
 inflection = ">=0.4,<0.5"
 ipdb = ">=0.13.7,<0.14.0"
@@ -533,14 +532,6 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
 
 [package.dependencies]
 six = ">=1.5"
-
-[[package]]
-name = "pyyaml"
-version = "5.4.1"
-description = "YAML parser and emitter for Python"
-category = "main"
-optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
 
 [[package]]
 name = "regex"
@@ -756,7 +747,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "1f5e579f3085e69ac2dc760fd5ec8e65fddb6e0fa9d34f4faa5e039b7aa464d9"
+content-hash = "46308d508e0aea70e08edc59d5179a8d1a1e83bc510c4b4ec4976d4530c2b72f"
 
 [metadata.files]
 appdirs = [
@@ -827,8 +818,8 @@ crayons = [
     {file = "crayons-0.4.0.tar.gz", hash = "sha256:bd33b7547800f2cfbd26b38431f9e64b487a7de74a947b0fafc89b45a601813f"},
 ]
 datafiles = [
-    {file = "datafiles-0.13.1-py3-none-any.whl", hash = "sha256:bb9bfe6bf53f56a086af957404ca32feff4852095822903bb62944c9712e3d0a"},
-    {file = "datafiles-0.13.1.tar.gz", hash = "sha256:c60c5969ada5b56c11a75504303b56799b184e638ef22739bec836539a57c5a3"},
+    {file = "datafiles-0.15-py3-none-any.whl", hash = "sha256:a86fe090fad2b6aab43850e0b11e97775e64446f078a243207a60c057d13cf99"},
+    {file = "datafiles-0.15.tar.gz", hash = "sha256:0fc52c9582cd26d314bce4a86532803d293601c398abba055fb4cad50fb39b86"},
 ]
 decorator = [
     {file = "decorator-4.4.2-py2.py3-none-any.whl", hash = "sha256:41fa54c2a0cc4ba648be4fd43cff00aedf5b9465c9bf18d64325bc225f08f760"},
@@ -846,8 +837,8 @@ flask = [
     {file = "Flask-2.0.0.tar.gz", hash = "sha256:168e8507792cb8a3aa06afbe5d4d431d3e07c6318bc3893ceecb81aff09f848d"},
 ]
 flask-api = [
-    {file = "Flask-API-3.0b1.tar.gz", hash = "sha256:cbe4134c102df8381a20628ffb315a2086e21cfb136951a2d96f85dd5aad5620"},
-    {file = "Flask_API-3.0b1-py3-none-any.whl", hash = "sha256:66d66b86d9459ad1d8d62c2c921bbf9872df96884187f96e2933be0274f3f6af"},
+    {file = "Flask-API-3.0.post1.tar.gz", hash = "sha256:331889500433b0a5e71ae7910a00ee577c8999baba03ca685b3558ee93031cce"},
+    {file = "Flask_API-3.0.post1-py3-none-any.whl", hash = "sha256:913d1ef4d303b5e4490a712175d83a91c2b9cc6052ef501cff8301d9f553b179"},
 ]
 gitman = [
     {file = "gitman-2.3.1-py3-none-any.whl", hash = "sha256:c7cd907d72acdcce51f10ced3e9598b6fcbd8d644af061772baebbda9fc514e5"},
@@ -959,8 +950,8 @@ pickleshare = [
     {file = "pickleshare-0.7.5.tar.gz", hash = "sha256:87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca"},
 ]
 pomace = [
-    {file = "pomace-0.8.1-py3-none-any.whl", hash = "sha256:4c25134753dedde54ea047af9379f45dfdfd2152e169ad00ed06e569cef4d0dc"},
-    {file = "pomace-0.8.1.tar.gz", hash = "sha256:31b478ba87c74b5d737d804b1907457897742d52f3cfa0408709369c66790b95"},
+    {file = "pomace-0.8.7-py3-none-any.whl", hash = "sha256:ee5010eebdb0d881c5090a3d80833db8f7562c67525fe867052ea44c06eddcc7"},
+    {file = "pomace-0.8.7.tar.gz", hash = "sha256:dfd83f9a1fa7391436620ac869ebbed4c17c3decb7e10e72e49cbf80f1fa0036"},
 ]
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.17-py3-none-any.whl", hash = "sha256:4cea7d09e46723885cb8bc54678175453e5071e9449821dce6f017b1d1fbfc1a"},
@@ -981,37 +972,6 @@ pylev = [
 python-dateutil = [
     {file = "python-dateutil-2.8.1.tar.gz", hash = "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"},
     {file = "python_dateutil-2.8.1-py2.py3-none-any.whl", hash = "sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"},
-]
-pyyaml = [
-    {file = "PyYAML-5.4.1-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:3b2b1824fe7112845700f815ff6a489360226a5609b96ec2190a45e62a9fc922"},
-    {file = "PyYAML-5.4.1-cp27-cp27m-win32.whl", hash = "sha256:129def1b7c1bf22faffd67b8f3724645203b79d8f4cc81f674654d9902cb4393"},
-    {file = "PyYAML-5.4.1-cp27-cp27m-win_amd64.whl", hash = "sha256:4465124ef1b18d9ace298060f4eccc64b0850899ac4ac53294547536533800c8"},
-    {file = "PyYAML-5.4.1-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:bb4191dfc9306777bc594117aee052446b3fa88737cd13b7188d0e7aa8162185"},
-    {file = "PyYAML-5.4.1-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:6c78645d400265a062508ae399b60b8c167bf003db364ecb26dcab2bda048253"},
-    {file = "PyYAML-5.4.1-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:4e0583d24c881e14342eaf4ec5fbc97f934b999a6828693a99157fde912540cc"},
-    {file = "PyYAML-5.4.1-cp36-cp36m-manylinux2014_aarch64.whl", hash = "sha256:72a01f726a9c7851ca9bfad6fd09ca4e090a023c00945ea05ba1638c09dc3347"},
-    {file = "PyYAML-5.4.1-cp36-cp36m-manylinux2014_s390x.whl", hash = "sha256:895f61ef02e8fed38159bb70f7e100e00f471eae2bc838cd0f4ebb21e28f8541"},
-    {file = "PyYAML-5.4.1-cp36-cp36m-win32.whl", hash = "sha256:3bd0e463264cf257d1ffd2e40223b197271046d09dadf73a0fe82b9c1fc385a5"},
-    {file = "PyYAML-5.4.1-cp36-cp36m-win_amd64.whl", hash = "sha256:e4fac90784481d221a8e4b1162afa7c47ed953be40d31ab4629ae917510051df"},
-    {file = "PyYAML-5.4.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:5accb17103e43963b80e6f837831f38d314a0495500067cb25afab2e8d7a4018"},
-    {file = "PyYAML-5.4.1-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:e1d4970ea66be07ae37a3c2e48b5ec63f7ba6804bdddfdbd3cfd954d25a82e63"},
-    {file = "PyYAML-5.4.1-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:cb333c16912324fd5f769fff6bc5de372e9e7a202247b48870bc251ed40239aa"},
-    {file = "PyYAML-5.4.1-cp37-cp37m-manylinux2014_s390x.whl", hash = "sha256:fe69978f3f768926cfa37b867e3843918e012cf83f680806599ddce33c2c68b0"},
-    {file = "PyYAML-5.4.1-cp37-cp37m-win32.whl", hash = "sha256:dd5de0646207f053eb0d6c74ae45ba98c3395a571a2891858e87df7c9b9bd51b"},
-    {file = "PyYAML-5.4.1-cp37-cp37m-win_amd64.whl", hash = "sha256:08682f6b72c722394747bddaf0aa62277e02557c0fd1c42cb853016a38f8dedf"},
-    {file = "PyYAML-5.4.1-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:d2d9808ea7b4af864f35ea216be506ecec180628aced0704e34aca0b040ffe46"},
-    {file = "PyYAML-5.4.1-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:8c1be557ee92a20f184922c7b6424e8ab6691788e6d86137c5d93c1a6ec1b8fb"},
-    {file = "PyYAML-5.4.1-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:fd7f6999a8070df521b6384004ef42833b9bd62cfee11a09bda1079b4b704247"},
-    {file = "PyYAML-5.4.1-cp38-cp38-manylinux2014_s390x.whl", hash = "sha256:bfb51918d4ff3d77c1c856a9699f8492c612cde32fd3bcd344af9be34999bfdc"},
-    {file = "PyYAML-5.4.1-cp38-cp38-win32.whl", hash = "sha256:fa5ae20527d8e831e8230cbffd9f8fe952815b2b7dae6ffec25318803a7528fc"},
-    {file = "PyYAML-5.4.1-cp38-cp38-win_amd64.whl", hash = "sha256:0f5f5786c0e09baddcd8b4b45f20a7b5d61a7e7e99846e3c799b05c7c53fa696"},
-    {file = "PyYAML-5.4.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:294db365efa064d00b8d1ef65d8ea2c3426ac366c0c4368d930bf1c5fb497f77"},
-    {file = "PyYAML-5.4.1-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:74c1485f7707cf707a7aef42ef6322b8f97921bd89be2ab6317fd782c2d53183"},
-    {file = "PyYAML-5.4.1-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:d483ad4e639292c90170eb6f7783ad19490e7a8defb3e46f97dfe4bacae89122"},
-    {file = "PyYAML-5.4.1-cp39-cp39-manylinux2014_s390x.whl", hash = "sha256:fdc842473cd33f45ff6bce46aea678a54e3d21f1b61a7750ce3c498eedfe25d6"},
-    {file = "PyYAML-5.4.1-cp39-cp39-win32.whl", hash = "sha256:49d4cdd9065b9b6e206d0595fee27a96b5dd22618e7520c33204a4a3239d5b10"},
-    {file = "PyYAML-5.4.1-cp39-cp39-win_amd64.whl", hash = "sha256:c20cfa2d49991c8b4147af39859b167664f2ad4561704ee74c1de03318e898db"},
-    {file = "PyYAML-5.4.1.tar.gz", hash = "sha256:607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"},
 ]
 regex = [
     {file = "regex-2020.11.13-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:8b882a78c320478b12ff024e81dc7d43c1462aa4a3341c754ee65d857a521f85"},
