@@ -1,0 +1,54 @@
+locators:
+  inclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0
+  exclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0
+actions:
+  - verb: ''
+    name: ''
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+  - verb: click
+    name: place_your_order
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: text
+        value: Place Your Order
+        index: 0
+        uses: -1
+      - mode: text
+        value: Place your order
+        index: 0
+        uses: -1
+      - mode: text
+        value: place your order
+        index: 0
+        uses: -1
+      - mode: value
+        value: Place Your Order
+        index: 0
+        uses: -1
+      - mode: value
+        value: Place your order
+        index: 0
+        uses: -1
+      - mode: value
+        value: place your order
+        index: 0
+        uses: -1
+      - mode: name
+        value: placeYourOrder1
+        index: 0
+        uses: 8

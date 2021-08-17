@@ -462,7 +462,7 @@ python-versions = "*"
 
 [[package]]
 name = "pomace"
-version = "0.8.7"
+version = "0.8.15"
 description = "Dynamic page objects for browser automation."
 category = "main"
 optional = false
@@ -475,14 +475,14 @@ cached-property = ">=1.5.2,<2.0.0"
 cleo = ">=0.8.1,<0.9.0"
 datafiles = ">=0.15,<0.16"
 fake-useragent = ">=0.1.11,<0.2.0"
-faker = ">=4.1.1,<5.0.0"
+faker = ">=4.1.1"
 flask-api = ">=3.0,<4.0"
 gitman = ">=2.3,<3.0"
 inflection = ">=0.4,<0.5"
 ipdb = ">=0.13.7,<0.14.0"
 minilog = ">=2.0,<3.0"
 parse = ">=1.14,<2.0"
-splinter = ">=0.14.0,<0.15.0"
+splinter = ">=0.15,<0.16"
 us = ">=2.0.2,<3.0.0"
 webdriver_manager = ">=2.5,<3.0"
 zipcodes = ">=1.1.2,<2.0.0"
@@ -611,7 +611,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "splinter"
-version = "0.14.0"
+version = "0.15.0"
 description = "browser abstraction for web acceptance testing"
 category = "main"
 optional = false
@@ -622,7 +622,7 @@ selenium = ">=3.141.0"
 six = "*"
 
 [package.extras]
-django = ["lxml (>=2.3.6)", "cssselect", "six", "Django (>=1.7.11)", "Django (>=2.0.6)"]
+django = ["Django (>=1.7.11)", "lxml (>=2.3.6)", "cssselect", "six"]
 flask = ["Flask (>=1.0.2)", "lxml (>=2.3.6)", "cssselect"]
 "zope.testbrowser" = ["zope.testbrowser (>=5.2.4)", "lxml (>=4.2.4)", "cssselect"]
 
@@ -747,7 +747,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "46308d508e0aea70e08edc59d5179a8d1a1e83bc510c4b4ec4976d4530c2b72f"
+content-hash = "d51e089fa538fa8bf48d5b1db6639403182bef6222bbb261e10292b572c2c0a1"
 
 [metadata.files]
 appdirs = [
@@ -950,8 +950,8 @@ pickleshare = [
     {file = "pickleshare-0.7.5.tar.gz", hash = "sha256:87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca"},
 ]
 pomace = [
-    {file = "pomace-0.8.7-py3-none-any.whl", hash = "sha256:ee5010eebdb0d881c5090a3d80833db8f7562c67525fe867052ea44c06eddcc7"},
-    {file = "pomace-0.8.7.tar.gz", hash = "sha256:dfd83f9a1fa7391436620ac869ebbed4c17c3decb7e10e72e49cbf80f1fa0036"},
+    {file = "pomace-0.8.15-py3-none-any.whl", hash = "sha256:9bedb10fdaf5493e952fefea4a300d566b45f353aa27fcf1f9c39624b6997b70"},
+    {file = "pomace-0.8.15.tar.gz", hash = "sha256:258fc8d942d16253cd27a2cae83ea29a18fb1fef0d54102aaf1b850b1c39570d"},
 ]
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.17-py3-none-any.whl", hash = "sha256:4cea7d09e46723885cb8bc54678175453e5071e9449821dce6f017b1d1fbfc1a"},
@@ -1070,8 +1070,9 @@ soupsieve = [
     {file = "soupsieve-2.2.tar.gz", hash = "sha256:407fa1e8eb3458d1b5614df51d9651a1180ea5fedf07feb46e45d7e25e6d6cdd"},
 ]
 splinter = [
-    {file = "splinter-0.14.0-py3-none-any.whl", hash = "sha256:7e5e69c5b76ada909283465cdc3636e2632f7e557932ce96ab9c0432b0b32f7f"},
-    {file = "splinter-0.14.0.tar.gz", hash = "sha256:459e39e7a9f7572db6f1cdb5fdc5ccfc6404f021dccb969ee6287be2386a40db"},
+    {file = "splinter-0.15.0-py2-none-any.whl", hash = "sha256:18b9d992352953cdd61ca8ece9616c9f214b47caebf8893266cb46bce60f6d60"},
+    {file = "splinter-0.15.0-py3-none-any.whl", hash = "sha256:3f63f946fd96b750b4fd3c49ffb17abd6dc03d094b4836753e6be33f53fcfee1"},
+    {file = "splinter-0.15.0.tar.gz", hash = "sha256:218f4433018f9d1710a3201de7c22284273ab8bf29e5793247844fd74aafaf89"},
 ]
 text-unidecode = [
     {file = "text-unidecode-1.3.tar.gz", hash = "sha256:bad6603bb14d279193107714b288be206cac565dfa49aa5b105294dd5c4aab93"},

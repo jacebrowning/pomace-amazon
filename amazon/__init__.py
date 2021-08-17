@@ -38,17 +38,23 @@ def reload_balance(amount: str, repeat: str):
 
     for index in range(int(repeat)):
         log.info(f"Selecting amount ${amount}")
-        page = page.fill_amount(amount).type_tab(wait=0)
+        page = page.fill_amount(amount).type_tab(wait=0).click_buy_now()
+        assert f"${amount}" in page
 
-        assert f"Reload ${amount}" in page
-        log.info("Reloading balance")
-        page = page.click_reload(wait=2)
+        page = page.click_use_this_payment_method(wait=1)
+        if "By placing your order" not in page:
+            log.info("Choosing payment method")
+            page = page.click_card(wait=1)
 
-        if "Verify your card" in page:
-            log.info("Handling card verification")
-            page = page.fill_card(settings.card).click_verify_card(wait=0)
-            assert f"Reload ${amount}" in page
-            page = page.click_reload()
+            if page.browser.find_by_text("Verify your card").first.visible:
+                log.info("Handling card verification")
+                page = page.fill_card(settings.card).click_verify_card(wait=1)
+
+            page = page.click_use_this_payment_method(wait=1)
+            assert "By placing your order" in page
+
+        log.info("Placing order")
+        page = page.click_place_your_order(wait=2)
 
         log.info(f"Balance reloaded {index + 1} time(s)")
-        page = page.click_reload_again()
+        page = pomace.visit("https://www.amazon.com/asv/reload/order")
