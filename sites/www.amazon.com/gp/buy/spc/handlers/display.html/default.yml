@@ -20,35 +20,38 @@ actions:
   - verb: click
     name: place_your_order
     locators:
+      - mode: name
+        value: placeYourOrder1
+        index: 0
+        uses: 8
+  - verb: click
+    name: use_this_payment_method
+    locators:
       - mode: ''
         value: ''
         index: 0
         uses: 0
       - mode: text
-        value: Place Your Order
+        value: Use This Payment Method
         index: 0
-        uses: -1
+        uses: -7
       - mode: text
-        value: Place your order
+        value: Use this payment method
         index: 0
-        uses: -1
+        uses: -7
       - mode: text
-        value: place your order
+        value: use this payment method
         index: 0
-        uses: -1
+        uses: -7
       - mode: value
-        value: Place Your Order
+        value: Use This Payment Method
         index: 0
-        uses: -1
+        uses: -7
       - mode: value
-        value: Place your order
+        value: Use this payment method
         index: 0
-        uses: -1
+        uses: -7
       - mode: value
-        value: place your order
+        value: use this payment method
         index: 0
-        uses: -1
-      - mode: name
-        value: placeYourOrder1
-        index: 0
-        uses: 8
+        uses: -7

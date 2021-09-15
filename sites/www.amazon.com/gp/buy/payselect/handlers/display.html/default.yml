@@ -20,38 +20,6 @@ actions:
   - verb: click
     name: card
     locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
-      - mode: text
-        value: Card
-        index: 0
-        uses: -1
-      - mode: text
-        value: Card
-        index: 0
-        uses: -1
-      - mode: text
-        value: card
-        index: 0
-        uses: -1
-      - mode: value
-        value: Card
-        index: 0
-        uses: -1
-      - mode: value
-        value: Card
-        index: 0
-        uses: -1
-      - mode: value
-        value: card
-        index: 0
-        uses: -1
-      - mode: css
-        value: '[data-issuer-name-short="Debit Card"]'
-        index: 0
-        uses: -1
       - mode: text
         value: Debit Card
         index: 0
@@ -59,116 +27,24 @@ actions:
   - verb: fill
     name: card
     locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
-      - mode: name
-        value: card
-        index: 0
-        uses: -1
-      - mode: name
-        value: card
-        index: 0
-        uses: -1
-      - mode: id
-        value: card
-        index: 0
-        uses: -1
-      - mode: id
-        value: card
-        index: 0
-        uses: -1
-      - mode: aria-label
-        value: Card
-        index: 0
-        uses: -1
-      - mode: css
-        value: '[placeholder="Card"]'
-        index: 0
-        uses: -1
-      - mode: id
-        value: Card
-        index: 0
-        uses: -1
-      - mode: id
-        value: pp-tya3sG-84
-        index: 0
-        uses: -1
-      - mode: css
-        value: '[maxlength="30"]'
-        index: 1
-        uses: -1
       - mode: css
         value: '[maxlength="30"]'
         index: 0
         uses: 5
-      - mode: tag
-        value: input
-        index: 1
-        uses: -1
   - verb: click
     name: verify_card
     locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
-      - mode: text
-        value: Verify Card
-        index: 0
-        uses: -1
       - mode: text
         value: Verify card
         index: 0
         uses: 12
-      - mode: text
-        value: verify card
-        index: 0
-        uses: 0
-      - mode: value
-        value: Verify Card
-        index: 0
-        uses: 0
-      - mode: value
-        value: Verify card
-        index: 0
-        uses: 0
-      - mode: value
-        value: verify card
-        index: 0
-        uses: 0
   - verb: click
     name: use_this_payment_method
     locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
-      - mode: text
-        value: Use This Payment Method
-        index: 0
-        uses: -1
-      - mode: text
-        value: Use this payment method
-        index: 0
-        uses: -1
-      - mode: text
-        value: use this payment method
-        index: 0
-        uses: -1
-      - mode: value
-        value: Use This Payment Method
-        index: 0
-        uses: -1
       - mode: value
         value: Use this payment method
         index: 0
         uses: 18
-      - mode: value
-        value: use this payment method
-        index: 0
-        uses: 0
   - verb: type
     name: tab
     locators:

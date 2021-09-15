@@ -6,6 +6,8 @@ import pomace
 
 
 def cli():
+    if "--dev" not in sys.argv:
+        pomace.freeze()
     try:
         reload_balance(*sys.argv[1:])
     except KeyboardInterrupt:

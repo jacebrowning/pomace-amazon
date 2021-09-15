@@ -20,38 +20,6 @@ actions:
   - verb: fill
     name: amount
     locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
-      - mode: name
-        value: amount
-        index: 0
-        uses: -1
-      - mode: name
-        value: amount
-        index: 0
-        uses: -1
-      - mode: id
-        value: amount
-        index: 0
-        uses: -1
-      - mode: id
-        value: amount
-        index: 0
-        uses: -1
-      - mode: aria-label
-        value: Amount
-        index: 0
-        uses: -1
-      - mode: css
-        value: '[placeholder="Amount"]'
-        index: 0
-        uses: -1
-      - mode: id
-        value: Amount
-        index: 0
-        uses: -1
       - mode: id
         value: gcui-asv-reload-form-custom-amount
         index: 0
@@ -66,34 +34,6 @@ actions:
   - verb: click
     name: buy_now
     locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
-      - mode: text
-        value: Buy Now
-        index: 0
-        uses: -1
-      - mode: text
-        value: Buy now
-        index: 0
-        uses: -1
-      - mode: text
-        value: buy now
-        index: 0
-        uses: -1
-      - mode: value
-        value: Buy Now
-        index: 0
-        uses: -1
-      - mode: value
-        value: Buy now
-        index: 0
-        uses: -1
-      - mode: value
-        value: buy now
-        index: 0
-        uses: -1
       - mode: id
         value: gcui-asv-reload-buynow-button
         index: 0
@@ -101,31 +41,7 @@ actions:
   - verb: click
     name: sign_in
     locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
-      - mode: text
-        value: Sign In
-        index: 0
-        uses: -1
       - mode: text
         value: Sign in
         index: 1
         uses: 14
-      - mode: text
-        value: sign in
-        index: 0
-        uses: -1
-      - mode: value
-        value: Sign In
-        index: 0
-        uses: -1
-      - mode: value
-        value: Sign in
-        index: 1
-        uses: -1
-      - mode: value
-        value: sign in
-        index: 0
-        uses: -1

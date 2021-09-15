@@ -6,26 +6,6 @@ actions:
         value: ap_email
         index: 0
         uses: 36
-      - mode: name
-        value: email
-        index: 0
-        uses: 0
-      - mode: name
-        value: email
-        index: 0
-        uses: 0
-      - mode: id
-        value: email
-        index: 0
-        uses: 0
-      - mode: id
-        value: email
-        index: 0
-        uses: 0
-      - mode: css
-        value: '[aria-label="Email"]'
-        index: 0
-        uses: 0
   - verb: click
     name: continue
     locators:
@@ -33,14 +13,6 @@ actions:
         value: continue
         index: 0
         uses: 36
-      - mode: text
-        value: Continue
-        index: 0
-        uses: 0
-      - mode: text
-        value: Continue
-        index: 0
-        uses: 0
   - verb: ''
     name: ''
     locators:
@@ -53,6 +25,6 @@ locators:
     - mode: id
       value: continue
       index: 0
-      uses: 35
+      uses: 9
   exclusions:
     -
