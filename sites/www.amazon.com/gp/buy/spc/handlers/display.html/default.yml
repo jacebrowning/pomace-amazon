@@ -34,24 +34,24 @@ actions:
       - mode: text
         value: Use This Payment Method
         index: 0
-        uses: -17
+        uses: -27
       - mode: text
         value: Use this payment method
         index: 0
-        uses: -17
+        uses: -27
       - mode: text
         value: use this payment method
         index: 0
-        uses: -17
+        uses: -27
       - mode: value
         value: Use This Payment Method
         index: 0
-        uses: -17
+        uses: -27
       - mode: value
         value: Use this payment method
         index: 0
-        uses: -17
+        uses: -27
       - mode: value
         value: use this payment method
         index: 0
-        uses: -17
+        uses: -27

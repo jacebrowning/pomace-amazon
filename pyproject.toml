@@ -10,16 +10,20 @@ license = "MIT"
 
 python = "^3.7"
 
-pomace = "~0.9"
+pomace = "^0.9.1"
 
 [tool.poetry.dev-dependencies]
 
-black = "=21.8b0"
-isort = "=5.9.3"
+black = "~21.12b0"
+isort = "~5.10.1"
 
 [tool.poetry.scripts]
 
 reload-amazon-balance = "amazon:cli"
+
+[tool.black]
+
+quiet = true
 
 [tool.isort]
 
