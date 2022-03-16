@@ -219,7 +219,7 @@ test = ["pytest (>=6.2.0)", "pytest-cov", "pytest-subtests", "pytest-xdist", "pr
 
 [[package]]
 name = "datafiles"
-version = "1.1.1"
+version = "1.2"
 description = "File-based ORM for dataclasses."
 category = "main"
 optional = false
@@ -566,7 +566,7 @@ websockets = "10.1"
 
 [[package]]
 name = "pomace"
-version = "0.9.13"
+version = "0.9.14"
 description = "Dynamic page objects for browser automation."
 category = "main"
 optional = false
@@ -576,7 +576,7 @@ python-versions = ">=3.8,<4.0"
 beautifulsoup4 = ">=4.8.2,<5.0.0"
 bullet = ">=2.2,<3.0"
 cleo = ">=0.8.1,<0.9.0"
-datafiles = ">=1.1,<2.0"
+datafiles = ">=1.2,<2.0"
 fake-useragent = ">=0.1.11,<0.2.0"
 faker = ">=4.1.1"
 flask-api = ">=3.0,<4.0"
@@ -948,7 +948,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "012b986d5350118e91a84f823e7b897e83c176e6c996e10dd5803d02781ef051"
+content-hash = "456431354ecc526329183814d0d2e5ffbf8621303a9ea24cadb99e35b9ab0605"
 
 [metadata.files]
 appnope = [
@@ -1119,8 +1119,8 @@ cryptography = [
     {file = "cryptography-36.0.1.tar.gz", hash = "sha256:53e5c1dc3d7a953de055d77bef2ff607ceef7a2aac0353b5d630ab67f7423638"},
 ]
 datafiles = [
-    {file = "datafiles-1.1.1-py3-none-any.whl", hash = "sha256:e737cf927439767798df991ae7689324e42c7fb8d8b9ffd601ffcad34e857529"},
-    {file = "datafiles-1.1.1.tar.gz", hash = "sha256:16f15323cdcd6707a875b4956c8660e8c62cd1e2a775c02c5dde79bcba88a283"},
+    {file = "datafiles-1.2-py3-none-any.whl", hash = "sha256:75f3f572884f045e101262f014a3c594b67df14a55da82d19394c0e9854be6e6"},
+    {file = "datafiles-1.2.tar.gz", hash = "sha256:209493cac9640e30d51de0c59708ddba1d57d317878b278a69532adad07f543a"},
 ]
 decorator = [
     {file = "decorator-4.4.2-py2.py3-none-any.whl", hash = "sha256:41fa54c2a0cc4ba648be4fd43cff00aedf5b9465c9bf18d64325bc225f08f760"},
@@ -1329,8 +1329,8 @@ playwright = [
     {file = "playwright-1.19.0-py3-none-win_amd64.whl", hash = "sha256:5febf7069572f34271f2d594a67fd2cdcffa7b83e4295db97c4b3825b3796536"},
 ]
 pomace = [
-    {file = "pomace-0.9.13-py3-none-any.whl", hash = "sha256:d24f67da25c053577f50e85691b3ae2bba0fa9f5aba9b93a09944794c532cb20"},
-    {file = "pomace-0.9.13.tar.gz", hash = "sha256:28bbd74bea549abf92bbbb51791bf8128e9aed92e1c1ed9d5f14c16b187b77bc"},
+    {file = "pomace-0.9.14-py3-none-any.whl", hash = "sha256:594ccdadfc56696adfa5d743384fe6b883562948eee55fec1b91b841ba79d596"},
+    {file = "pomace-0.9.14.tar.gz", hash = "sha256:d10fe1715f0d5a5a71f5bb6b95401c29d95c785876fe86056b846507b41c134f"},
 ]
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.17-py3-none-any.whl", hash = "sha256:4cea7d09e46723885cb8bc54678175453e5071e9449821dce6f017b1d1fbfc1a"},
