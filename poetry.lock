@@ -566,7 +566,7 @@ websockets = "10.1"
 
 [[package]]
 name = "pomace"
-version = "0.9.14"
+version = "0.10"
 description = "Dynamic page objects for browser automation."
 category = "main"
 optional = false
@@ -948,7 +948,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "456431354ecc526329183814d0d2e5ffbf8621303a9ea24cadb99e35b9ab0605"
+content-hash = "b3dc1a7d3d5a581f1009b7b5e29e2daa5ae00170cf6da3bf1797f6292ff207ec"
 
 [metadata.files]
 appnope = [
@@ -1329,8 +1329,8 @@ playwright = [
     {file = "playwright-1.19.0-py3-none-win_amd64.whl", hash = "sha256:5febf7069572f34271f2d594a67fd2cdcffa7b83e4295db97c4b3825b3796536"},
 ]
 pomace = [
-    {file = "pomace-0.9.14-py3-none-any.whl", hash = "sha256:594ccdadfc56696adfa5d743384fe6b883562948eee55fec1b91b841ba79d596"},
-    {file = "pomace-0.9.14.tar.gz", hash = "sha256:d10fe1715f0d5a5a71f5bb6b95401c29d95c785876fe86056b846507b41c134f"},
+    {file = "pomace-0.10-py3-none-any.whl", hash = "sha256:04cda772ab86352ac2dbe8d8b55c215b139cd40640d83a855f1716842251cbd9"},
+    {file = "pomace-0.10.tar.gz", hash = "sha256:ce122681cce4c8ae4b1e2d6360696b22c4bbb2b3dc579967c7748e2f053449f6"},
 ]
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.17-py3-none-any.whl", hash = "sha256:4cea7d09e46723885cb8bc54678175453e5071e9449821dce6f017b1d1fbfc1a"},
