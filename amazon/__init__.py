@@ -6,6 +6,9 @@ import pomace
 
 
 def cli():
+    log.reset()
+    log.init()
+    log.silence("datafiles", allow_warning=True)
     if "--dev" not in sys.argv:
         pomace.freeze()
     try:

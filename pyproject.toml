@@ -10,7 +10,7 @@ license = "MIT"
 
 python = "^3.8"
 
-pomace = "^0.10"
+pomace = "^0.10.6"
 
 [tool.poetry.dev-dependencies]
 
