@@ -1,22 +1,9 @@
 locators:
   inclusions:
-    - mode: ''
-      value: ''
-      index: 0
-      uses: 0
+    -
   exclusions:
-    - mode: ''
-      value: ''
-      index: 0
-      uses: 0
+    -
 actions:
-  - verb: ''
-    name: ''
-    locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
   - verb: fill
     name: amount
     locators:
@@ -24,13 +11,6 @@ actions:
         value: gcui-asv-reload-form-custom-amount
         index: 0
         uses: 26
-  - verb: type
-    name: tab
-    locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
   - verb: click
     name: buy_now
     locators:

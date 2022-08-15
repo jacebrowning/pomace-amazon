@@ -1,42 +1,4 @@
 actions:
-  - verb: ''
-    name: ''
-    locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
-  - verb: fill
-    name: amount
-    locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
-      - mode: name
-        value: amount
-        index: 0
-        uses: 0
-      - mode: name
-        value: amount
-        index: 0
-        uses: 0
-      - mode: id
-        value: amount
-        index: 0
-        uses: 0
-      - mode: id
-        value: amount
-        index: 0
-        uses: 0
-      - mode: css
-        value: '[aria-label="Amount"]'
-        index: 0
-        uses: 0
-      - mode: id
-        value: Amount
-        index: 0
-        uses: 0
   - verb: click
     name: not_now
     locators:
@@ -46,12 +8,6 @@ actions:
         uses: 3
 locators:
   inclusions:
-    - mode: ''
-      value: ''
-      index: 0
-      uses: 0
+    -
   exclusions:
-    - mode: ''
-      value: ''
-      index: 0
-      uses: 0
+    -

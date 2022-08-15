@@ -1,22 +1,9 @@
 locators:
   inclusions:
-    - mode: ''
-      value: ''
-      index: 0
-      uses: 0
+    -
   exclusions:
-    - mode: ''
-      value: ''
-      index: 0
-      uses: 0
+    -
 actions:
-  - verb: ''
-    name: ''
-    locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
   - verb: click
     name: place_your_order
     locators:
@@ -24,34 +11,3 @@ actions:
         value: placeYourOrder1
         index: 0
         uses: 8
-  - verb: click
-    name: use_this_payment_method
-    locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
-      - mode: text
-        value: Use This Payment Method
-        index: 0
-        uses: -67
-      - mode: text
-        value: Use this payment method
-        index: 0
-        uses: -67
-      - mode: text
-        value: use this payment method
-        index: 0
-        uses: -67
-      - mode: value
-        value: Use This Payment Method
-        index: 0
-        uses: -67
-      - mode: value
-        value: Use this payment method
-        index: 0
-        uses: -67
-      - mode: value
-        value: use this payment method
-        index: 0
-        uses: -67

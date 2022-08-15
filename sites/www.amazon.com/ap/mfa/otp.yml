@@ -1,57 +1,7 @@
 actions:
-  - verb: fill
-    name: otp
-    locators:
-      - mode: id
-        value: auth-mfa-otpcode
-        index: 0
-        score: 1.0
-      - mode: name
-        value: otp
-        index: 0
-        score: 0.5
-      - mode: name
-        value: otp
-        index: 0
-        score: 0.5
-      - mode: id
-        value: otp
-        index: 0
-        score: 0.5
-      - mode: id
-        value: otp
-        index: 0
-        score: 0.5
-      - mode: css
-        value: '[aria-label="Otp"]'
-        index: 0
-        score: 0.5
-      - mode: id
-        value: Otp
-        index: 0
-        score: 0.5
-  - verb: click
-    name: sign_in
-    locators:
-      - mode: id
-        value: auth-signin-button
-        index: 0
-        score: 1.0
-      - mode: text
-        value: Sign In
-        index: 0
-        score: 0.5
-      - mode: text
-        value: Sign in
-        index: 0
-        score: 0.5
-active_locators:
-  - mode: ''
-    value: ''
-    index: 0
-    score: 0.0
-inactive_locators:
-  - mode: ''
-    value: ''
-    index: 0
-    score: 0.0
+  -
+locators:
+  inclusions:
+    -
+  exclusions:
+    -

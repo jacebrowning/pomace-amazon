@@ -1,9 +1,6 @@
 locators:
   exclusions:
-    - mode: text
-      value: Sign in
-      index: 0
-      uses: 0
+    -
   inclusions:
     - mode: css
       value: '[aria-label="Verify card"]'
@@ -17,26 +14,6 @@ actions:
         value: '[maxlength="30"]'
         index: 0
         uses: 12
-      - mode: name
-        value: card
-        index: 0
-        uses: 0
-      - mode: name
-        value: card
-        index: 0
-        uses: 0
-      - mode: id
-        value: card
-        index: 0
-        uses: 0
-      - mode: id
-        value: card
-        index: 0
-        uses: 0
-      - mode: css
-        value: '[aria-label="Card"]'
-        index: 0
-        uses: 0
   - verb: click
     name: verify_card
     locators:
@@ -44,14 +21,6 @@ actions:
         value: '[aria-label="Verify card"]'
         index: 0
         uses: 12
-      - mode: text
-        value: Verify Card
-        index: 0
-        uses: 0
-      - mode: text
-        value: Verify card
-        index: 0
-        uses: 0
   - verb: click
     name: reload
     locators:
@@ -59,18 +28,3 @@ actions:
         value: form-submit-button
         index: 0
         uses: 11
-      - mode: text
-        value: Reload
-        index: 0
-        uses: 0
-      - mode: text
-        value: Reload
-        index: 0
-        uses: 0
-  - verb: ''
-    name: ''
-    locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0

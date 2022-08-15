@@ -14,18 +14,3 @@ actions:
         value: Hello, Sign in
         index: 0
         uses: 20
-      - mode: text
-        value: Sign In
-        index: 0
-        uses: 0
-      - mode: text
-        value: Sign in
-        index: 0
-        uses: 0
-  - verb: ''
-    name: ''
-    locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0

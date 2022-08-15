@@ -18,26 +18,6 @@ actions:
         value: asv-manual-reload-amount
         index: 0
         uses: 71
-      - mode: name
-        value: amount
-        index: 0
-        uses: 0
-      - mode: name
-        value: amount
-        index: 0
-        uses: 0
-      - mode: id
-        value: amount
-        index: 0
-        uses: 0
-      - mode: id
-        value: amount
-        index: 0
-        uses: 0
-      - mode: css
-        value: '[aria-label="Amount"]'
-        index: 0
-        uses: 0
   - verb: click
     name: reload
     locators:
@@ -45,25 +25,3 @@ actions:
         value: form-submit-button
         index: 0
         uses: 71
-      - mode: text
-        value: Reload
-        index: 0
-        uses: 0
-      - mode: text
-        value: Reload
-        index: 0
-        uses: 0
-  - verb: ''
-    name: ''
-    locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
-  - verb: type
-    name: tab
-    locators:
-      - mode: ''
-        value: ''
-        index: 0
-        uses: 0
