@@ -9,7 +9,9 @@ def cli():
     log.reset()
     log.init()
     log.silence("datafiles", allow_warning=True)
-    if "--dev" not in sys.argv:
+    if "--dev" in sys.argv:
+        sys.argv.pop()
+    else:
         pomace.freeze()
     try:
         reload_balance(*sys.argv[1:])
@@ -46,7 +48,15 @@ def reload_balance(amount: str, repeat: str):
         page = page.fill_amount(amount).type_tab(wait=0).click_buy_now()
         assert f"${amount}" in page
 
-        page = page.click_use_this_payment_method(wait=1)
+        suffix = settings.card[-4:]
+        if suffix not in page:
+            log.warn(f"Card not selected: {suffix}")
+            page = page.click_change()
+            breakpoint()
+            page = pomace.auto()
+        else:
+            page = page.click_use_this_payment_method(wait=1)
+
         if "By placing your order" not in page:
             log.info("Choosing payment method")
             page = page.click_card(wait=1)

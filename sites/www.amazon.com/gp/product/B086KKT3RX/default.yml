@@ -25,3 +25,10 @@ actions:
         value: Sign in
         index: 1
         uses: 14
+  - verb: type
+    name: tab
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0

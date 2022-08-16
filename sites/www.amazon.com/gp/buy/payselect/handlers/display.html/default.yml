@@ -31,4 +31,4 @@ actions:
       - mode: value
         value: Use this payment method
         index: 0
-        uses: 18
+        uses: 15
