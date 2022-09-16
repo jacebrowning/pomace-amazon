@@ -32,3 +32,10 @@ actions:
         value: Use this payment method
         index: 0
         uses: 15
+  - verb: click
+    name: continue
+    locators:
+      - mode: value
+        value: Continue
+        index: 0
+        uses: 2

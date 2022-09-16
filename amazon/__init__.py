@@ -50,10 +50,10 @@ def reload_balance(amount: str, repeat: str):
 
         suffix = settings.card[-4:]
         if suffix not in page:
-            log.warn(f"Card not selected: {suffix}")
+            log.info(f"Selecting card ending in {suffix}")
             page = page.click_change()
-            breakpoint()
-            page = pomace.auto()
+            page.browser.find_by_text(f"ending in {suffix}").click()
+            page = page.click_continue()
         else:
             page = page.click_use_this_payment_method(wait=1)
 

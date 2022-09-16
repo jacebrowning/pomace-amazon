@@ -18,7 +18,7 @@ python-versions = "*"
 six = "*"
 
 [package.extras]
-test = ["pytest", "astroid (<=2.5.3)"]
+test = ["astroid (<=2.5.3)", "pytest"]
 
 [[package]]
 name = "async-generator"
@@ -37,10 +37,10 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [package.extras]
-dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope.interface", "furo", "sphinx", "sphinx-notfound-page", "pre-commit", "cloudpickle"]
-docs = ["furo", "sphinx", "zope.interface", "sphinx-notfound-page"]
-tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope.interface", "cloudpickle"]
-tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "cloudpickle"]
+dev = ["cloudpickle", "coverage[toml] (>=5.0.2)", "furo", "hypothesis", "mypy", "pre-commit", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "six", "sphinx", "sphinx-notfound-page", "zope.interface"]
+docs = ["furo", "sphinx", "sphinx-notfound-page", "zope.interface"]
+tests = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "six", "zope.interface"]
+tests_no_zope = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "six"]
 
 [[package]]
 name = "backcall"
@@ -82,10 +82,10 @@ tomli = ">=1.1.0"
 typing-extensions = {version = ">=3.10.0.0", markers = "python_version < \"3.10\""}
 
 [package.extras]
-uvloop = ["uvloop (>=0.15.2)"]
-jupyter = ["tokenize-rt (>=3.2.0)", "ipython (>=7.8.0)"]
-d = ["aiohttp (>=3.7.4)"]
 colorama = ["colorama (>=0.4.3)"]
+d = ["aiohttp (>=3.7.4)"]
+jupyter = ["ipython (>=7.8.0)", "tokenize-rt (>=3.2.0)"]
+uvloop = ["uvloop (>=0.15.2)"]
 
 [[package]]
 name = "bullet"
@@ -201,20 +201,20 @@ python-versions = ">=3.6"
 cffi = ">=1.12"
 
 [package.extras]
-docs = ["sphinx (>=1.6.5,!=1.8.0,!=3.1.0,!=3.1.1)", "sphinx-rtd-theme"]
-docstest = ["pyenchant (>=1.6.11)", "twine (>=1.12.0)", "sphinxcontrib-spelling (>=4.0.1)"]
+docs = ["sphinx (>=1.6.5,!=1.8.0,!=3.1.0,!=3.1.1)", "sphinx_rtd_theme"]
+docstest = ["pyenchant (>=1.6.11)", "sphinxcontrib-spelling (>=4.0.1)", "twine (>=1.12.0)"]
 pep8test = ["black", "flake8", "flake8-import-order", "pep8-naming"]
 sdist = ["setuptools_rust (>=0.11.4)"]
 ssh = ["bcrypt (>=3.1.5)"]
-test = ["pytest (>=6.2.0)", "pytest-cov", "pytest-subtests", "pytest-xdist", "pretend", "iso8601", "pytz", "hypothesis (>=1.11.4,!=3.79.2)"]
+test = ["hypothesis (>=1.11.4,!=3.79.2)", "iso8601", "pretend", "pytest (>=6.2.0)", "pytest-cov", "pytest-subtests", "pytest-xdist", "pytz"]
 
 [[package]]
 name = "datafiles"
-version = "1.4.2"
+version = "2.0"
 description = "File-based ORM for dataclasses."
 category = "main"
 optional = false
-python-versions = ">=3.7,<4.0"
+python-versions = ">=3.8,<4.0"
 
 [package.dependencies]
 cached_property = ">=1.5,<2.0"
@@ -223,7 +223,6 @@ minilog = ">=2.1,<3.0"
 parse = ">=1.12,<2.0"
 "ruamel.yaml" = ">=0.17.21,<0.18.0"
 tomlkit = ">=0.10.1,<0.11.0"
-typing-extensions = ">=3.7,<4.0"
 
 [[package]]
 name = "decorator"
@@ -276,8 +275,8 @@ Jinja2 = ">=3.0"
 Werkzeug = ">=2.0"
 
 [package.extras]
-dotenv = ["python-dotenv"]
 async = ["asgiref (>=3.2)"]
+dotenv = ["python-dotenv"]
 
 [[package]]
 name = "flask-api"
@@ -292,15 +291,16 @@ Flask = ">=2.0"
 
 [[package]]
 name = "gitman"
-version = "3.2"
+version = "3.3"
 description = "A language-agnostic dependency manager using Git."
 category = "main"
 optional = false
-python-versions = ">=3.7,<4.0"
+python-versions = ">=3.8,<4.0"
 
 [package.dependencies]
-datafiles = ">=1.2,<2.0"
+datafiles = ">=2.0,<3.0"
 minilog = ">=2.1,<3.0"
+universal-startfile = "*"
 
 [[package]]
 name = "greenlet"
@@ -311,7 +311,7 @@ optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*"
 
 [package.extras]
-docs = ["sphinx"]
+docs = ["Sphinx"]
 
 [[package]]
 name = "h11"
@@ -348,6 +348,7 @@ python-versions = ">=2.7"
 [package.dependencies]
 decorator = {version = "*", markers = "python_version > \"3.6\""}
 ipython = {version = ">=7.17.0", markers = "python_version > \"3.6\""}
+setuptools = "*"
 toml = {version = ">=0.10.2", markers = "python_version > \"3.6\""}
 
 [[package]]
@@ -369,11 +370,12 @@ pexpect = {version = ">4.3", markers = "sys_platform != \"win32\""}
 pickleshare = "*"
 prompt-toolkit = ">=2.0.0,<3.0.0 || >3.0.0,<3.0.1 || >3.0.1,<3.1.0"
 pygments = ">=2.4.0"
+setuptools = ">=18.5"
 stack-data = "*"
 traitlets = ">=5"
 
 [package.extras]
-all = ["black", "Sphinx (>=1.3)", "ipykernel", "nbconvert", "nbformat", "ipywidgets", "notebook", "ipyparallel", "qtconsole", "pytest (<7.1)", "pytest-asyncio", "testpath", "curio", "matplotlib (!=3.2.0)", "numpy (>=1.19)", "pandas", "trio"]
+all = ["Sphinx (>=1.3)", "black", "curio", "ipykernel", "ipyparallel", "ipywidgets", "matplotlib (!=3.2.0)", "nbconvert", "nbformat", "notebook", "numpy (>=1.19)", "pandas", "pytest (<7.1)", "pytest-asyncio", "qtconsole", "testpath", "trio"]
 black = ["black"]
 doc = ["Sphinx (>=1.3)"]
 kernel = ["ipykernel"]
@@ -383,7 +385,7 @@ notebook = ["ipywidgets", "notebook"]
 parallel = ["ipyparallel"]
 qtconsole = ["qtconsole"]
 test = ["pytest (<7.1)", "pytest-asyncio", "testpath"]
-test_extra = ["pytest (<7.1)", "pytest-asyncio", "testpath", "curio", "matplotlib (!=3.2.0)", "nbformat", "numpy (>=1.19)", "pandas", "trio"]
+test_extra = ["curio", "matplotlib (!=3.2.0)", "nbformat", "numpy (>=1.19)", "pandas", "pytest (<7.1)", "pytest-asyncio", "testpath", "trio"]
 
 [[package]]
 name = "ipython-genutils"
@@ -402,10 +404,10 @@ optional = false
 python-versions = ">=3.6.1,<4.0"
 
 [package.extras]
-plugins = ["setuptools"]
 colors = ["colorama (>=0.4.3,<0.5.0)"]
+pipfile_deprecated_finder = ["pipreqs", "requirementslib"]
+plugins = ["setuptools"]
 requirements_deprecated_finder = ["pip-api", "pipreqs"]
-pipfile_deprecated_finder = ["requirementslib", "pipreqs"]
 
 [[package]]
 name = "itsdangerous"
@@ -427,8 +429,8 @@ python-versions = ">=3.6"
 parso = ">=0.8.0,<0.9.0"
 
 [package.extras]
-testing = ["pytest (<6.0.0)", "docopt", "colorama", "Django (<3.1)"]
-qa = ["mypy (==0.782)", "flake8 (==3.8.3)"]
+qa = ["flake8 (==3.8.3)", "mypy (==0.782)"]
+testing = ["Django (<3.1)", "colorama", "docopt", "pytest (<6.0.0)"]
 
 [[package]]
 name = "jellyfish"
@@ -523,8 +525,8 @@ optional = false
 python-versions = ">=3.6"
 
 [package.extras]
-testing = ["pytest (<6.0.0)", "docopt"]
-qa = ["mypy (==0.782)", "flake8 (==3.8.3)"]
+qa = ["flake8 (==3.8.3)", "mypy (==0.782)"]
+testing = ["docopt", "pytest (<6.0.0)"]
 
 [[package]]
 name = "pastel"
@@ -570,8 +572,8 @@ optional = false
 python-versions = ">=3.6"
 
 [package.extras]
-test = ["pytest-mock (>=3.6)", "pytest-cov (>=2.7)", "pytest (>=6)", "appdirs (==1.4.4)"]
-docs = ["sphinx-autodoc-typehints (>=1.12)", "proselint (>=0.10.2)", "furo (>=2021.7.5b38)", "Sphinx (>=4)"]
+docs = ["Sphinx (>=4)", "furo (>=2021.7.5b38)", "proselint (>=0.10.2)", "sphinx-autodoc-typehints (>=1.12)"]
+test = ["appdirs (==1.4.4)", "pytest (>=6)", "pytest-cov (>=2.7)", "pytest-mock (>=3.6)"]
 
 [[package]]
 name = "playwright"
@@ -589,7 +591,7 @@ websockets = "10.1"
 
 [[package]]
 name = "pomace"
-version = "0.11"
+version = "0.11.7"
 description = "Dynamic page objects for browser automation."
 category = "main"
 optional = false
@@ -599,11 +601,11 @@ python-versions = ">=3.8,<4.0"
 beautifulsoup4 = ">=4.8.2,<5.0.0"
 bullet = ">=2.2,<3.0"
 cleo = ">=0.8.1,<0.9.0"
-datafiles = ">=1.4.2,<2.0.0"
+datafiles = ">=2.0,<3.0"
 fake-useragent = ">=0.1.11,<0.2.0"
 faker = ">=4.1.1"
 flask-api = ">=3.0,<4.0"
-gitman = ">=3.2,<4.0"
+gitman = ">=3.3,<4.0"
 inflection = ">=0.5.1,<0.6.0"
 ipdb = ">=0.13.9,<0.14.0"
 ipython = ">=8.4,<9.0"
@@ -613,6 +615,7 @@ parse = ">=1.14,<2.0"
 playwright = {version = ">=1.24,<2.0", markers = "platform_machine != \"armv7l\""}
 selenium = ">=4.4,<5.0"
 splinter = ">=0.18.1,<0.19.0"
+universal-startfile = "*"
 us = ">=2.0.2,<3.0.0"
 webdriver_manager = ">=3.8.3,<4.0.0"
 zipcodes = ">=1.1.2,<2.0.0"
@@ -692,8 +695,8 @@ cryptography = ">=3.3"
 six = ">=1.5.2"
 
 [package.extras]
-test = ["pytest (>=3.0.1)", "pretend", "flaky"]
-docs = ["sphinx-rtd-theme", "sphinx"]
+docs = ["sphinx", "sphinx-rtd-theme"]
+test = ["flaky", "pretend", "pytest (>=3.0.1)"]
 
 [[package]]
 name = "pysocks"
@@ -740,7 +743,7 @@ idna = ">=2.5,<3"
 urllib3 = ">=1.21.1,<1.27"
 
 [package.extras]
-security = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)"]
+security = ["cryptography (>=1.3.4)", "pyOpenSSL (>=0.14)"]
 socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
 
 [[package]]
@@ -778,6 +781,19 @@ python-versions = "~=3.7"
 trio = ">=0.17,<1.0"
 trio-websocket = ">=0.9,<1.0"
 urllib3 = {version = ">=1.26,<2.0", extras = ["secure", "socks"]}
+
+[[package]]
+name = "setuptools"
+version = "65.3.0"
+description = "Easily download, build, install, upgrade, and uninstall Python packages"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+docs = ["furo", "jaraco.packaging (>=9)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "rst.linker (>=1.9)", "sphinx", "sphinx-favicon", "sphinx-hoverxref (<2)", "sphinx-inline-tabs", "sphinx-notfound-page (==0.8.3)", "sphinx-reredirects", "sphinxcontrib-towncrier"]
+testing = ["build[virtualenv]", "filelock (>=3.4.0)", "flake8 (<5)", "flake8-2020", "ini2toml[lite] (>=0.9)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "mock", "pip (>=19.1)", "pip-run (>=8.8)", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=1.3)", "pytest-flake8", "pytest-mypy (>=0.9.1)", "pytest-perf", "pytest-xdist", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel"]
+testing-integration = ["build[virtualenv]", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
 
 [[package]]
 name = "six"
@@ -820,12 +836,12 @@ optional = false
 python-versions = "*"
 
 [package.extras]
-django = ["Django (>=2.0.6)", "lxml (>=4.2.4)", "cssselect"]
+django = ["Django (>=2.0.6)", "cssselect", "lxml (>=4.2.4)"]
 edge = ["msedge-selenium-tools"]
-flask = ["Flask (>=2.0.2)", "lxml (>=4.2.4)", "cssselect"]
+flask = ["Flask (>=2.0.2)", "cssselect", "lxml (>=4.2.4)"]
 selenium3 = ["selenium (>=3.141.0,<4.0)"]
 selenium4 = ["selenium (>=4.1.0,<5.0)"]
-"zope.testbrowser" = ["zope.testbrowser (>=5.5.1)", "lxml (>=4.2.4)", "cssselect"]
+"zope.testbrowser" = ["cssselect", "lxml (>=4.2.4)", "zope.testbrowser (>=5.5.1)"]
 
 [[package]]
 name = "stack-data"
@@ -841,7 +857,7 @@ executing = "*"
 pure-eval = "*"
 
 [package.extras]
-tests = ["cython", "littleutils", "pygments", "typeguard", "pytest"]
+tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
 
 [[package]]
 name = "text-unidecode"
@@ -945,6 +961,14 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "universal-startfile"
+version = "0.1.3"
+description = "A cross-platform version of 'os.startfile' from the standard library."
+category = "main"
+optional = false
+python-versions = ">=3.7,<4.0"
+
+[[package]]
 name = "urllib3"
 version = "1.26.5"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
@@ -960,9 +984,9 @@ pyOpenSSL = {version = ">=0.14", optional = true, markers = "extra == \"secure\"
 PySocks = {version = ">=1.5.6,<1.5.7 || >1.5.7,<2.0", optional = true, markers = "extra == \"socks\""}
 
 [package.extras]
-socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
-secure = ["ipaddress", "certifi", "idna (>=2.0.0)", "cryptography (>=1.3.4)", "pyOpenSSL (>=0.14)"]
 brotli = ["brotlipy (>=0.6.0)"]
+secure = ["certifi", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "ipaddress", "pyOpenSSL (>=0.14)"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [[package]]
 name = "us"
@@ -1037,7 +1061,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "982874c533b92ab5c4263cf7512f3b4c3a5d199df6a2793c375f0258a0420407"
+content-hash = "8bcb4aad79656598c6d28df7475bbcfbd7e9c6a74571366121551f807345ab56"
 
 [metadata.files]
 appnope = [
@@ -1204,8 +1228,8 @@ cryptography = [
     {file = "cryptography-36.0.1.tar.gz", hash = "sha256:53e5c1dc3d7a953de055d77bef2ff607ceef7a2aac0353b5d630ab67f7423638"},
 ]
 datafiles = [
-    {file = "datafiles-1.4.2-py3-none-any.whl", hash = "sha256:eaab264253f05e746c8c13096bd79153510a1d8077fee38351512f0b33cfb334"},
-    {file = "datafiles-1.4.2.tar.gz", hash = "sha256:64756b0c73333877b83164951f4a66a0d6ae7611db9d8ac63010cbe74f07afe6"},
+    {file = "datafiles-2.0-py3-none-any.whl", hash = "sha256:88fdb13c200978d4d0f15c9c4401703acf6793250896d065d52b845a782e0a46"},
+    {file = "datafiles-2.0.tar.gz", hash = "sha256:24eac986916073a38d6a59547ff9157788f43a1772ef44e27116781436e1c489"},
 ]
 decorator = [
     {file = "decorator-4.4.2-py2.py3-none-any.whl", hash = "sha256:41fa54c2a0cc4ba648be4fd43cff00aedf5b9465c9bf18d64325bc225f08f760"},
@@ -1231,8 +1255,8 @@ flask-api = [
     {file = "Flask_API-3.0.post1-py3-none-any.whl", hash = "sha256:913d1ef4d303b5e4490a712175d83a91c2b9cc6052ef501cff8301d9f553b179"},
 ]
 gitman = [
-    {file = "gitman-3.2-py3-none-any.whl", hash = "sha256:6f92adf9332f03da24c376549c8545458b1ce2933fedd271623760a3ae703a08"},
-    {file = "gitman-3.2.tar.gz", hash = "sha256:f7a8f96b04df1301a6cfd95bf964b02a1eaee3c2b66d009d95d5142da59f85d8"},
+    {file = "gitman-3.3-py3-none-any.whl", hash = "sha256:1dd9edb14ecd2f8953e0289899150f11747d440cd37dfbe8bab1ac7b1bc74f06"},
+    {file = "gitman-3.3.tar.gz", hash = "sha256:2e916e67168c36ce9232ccb06bfd1154eaf817ce19e92d72e7ed338562b91cbc"},
 ]
 greenlet = [
     {file = "greenlet-1.1.2-cp27-cp27m-macosx_10_14_x86_64.whl", hash = "sha256:58df5c2a0e293bf665a51f8a100d3e9956febfbf1d9aaf8c0677cf70218910c6"},
@@ -1426,8 +1450,8 @@ playwright = [
     {file = "playwright-1.24.1-py3-none-win_amd64.whl", hash = "sha256:7355d00cd2cb24265779b1cd9b18d9dcac17eea4a558d57ce20df650fc766f53"},
 ]
 pomace = [
-    {file = "pomace-0.11-py3-none-any.whl", hash = "sha256:8289e5757d7de22036808e7d40c97f633bd794e1a47949e9f0473cf1f1cfc193"},
-    {file = "pomace-0.11.tar.gz", hash = "sha256:001fad8be3614f9f3d5ee1c5ca7b7874134570797ff77180cc75627c4a7220ce"},
+    {file = "pomace-0.11.7-py3-none-any.whl", hash = "sha256:ebcc5090565f2549365cb32c8c49e1641679247f164cb879da1ea95a7b9f1828"},
+    {file = "pomace-0.11.7.tar.gz", hash = "sha256:b3c417dcfbac0c4fc22c940214b17b76e67bc4cb152ec5acb64d0b1390b00faf"},
 ]
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.17-py3-none-any.whl", hash = "sha256:4cea7d09e46723885cb8bc54678175453e5071e9449821dce6f017b1d1fbfc1a"},
@@ -1484,6 +1508,7 @@ requests = [
 ]
 "ruamel.yaml.clib" = [
     {file = "ruamel.yaml.clib-0.2.6-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:6e7be2c5bcb297f5b82fee9c665eb2eb7001d1050deaba8471842979293a80b0"},
+    {file = "ruamel.yaml.clib-0.2.6-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:066f886bc90cc2ce44df8b5f7acfc6a7e2b2e672713f027136464492b0c34d7c"},
     {file = "ruamel.yaml.clib-0.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl", hash = "sha256:221eca6f35076c6ae472a531afa1c223b9c29377e62936f61bc8e6e8bdc5f9e7"},
     {file = "ruamel.yaml.clib-0.2.6-cp310-cp310-win32.whl", hash = "sha256:1070ba9dd7f9370d0513d649420c3b362ac2d687fe78c6e888f5b12bf8bc7bee"},
     {file = "ruamel.yaml.clib-0.2.6-cp310-cp310-win_amd64.whl", hash = "sha256:77df077d32921ad46f34816a9a16e6356d8100374579bc35e15bab5d4e9377de"},
@@ -1493,24 +1518,32 @@ requests = [
     {file = "ruamel.yaml.clib-0.2.6-cp35-cp35m-win_amd64.whl", hash = "sha256:de9c6b8a1ba52919ae919f3ae96abb72b994dd0350226e28f3686cb4f142165c"},
     {file = "ruamel.yaml.clib-0.2.6-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:d67f273097c368265a7b81e152e07fb90ed395df6e552b9fa858c6d2c9f42502"},
     {file = "ruamel.yaml.clib-0.2.6-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:72a2b8b2ff0a627496aad76f37a652bcef400fd861721744201ef1b45199ab78"},
+    {file = "ruamel.yaml.clib-0.2.6-cp36-cp36m-manylinux2014_aarch64.whl", hash = "sha256:d3c620a54748a3d4cf0bcfe623e388407c8e85a4b06b8188e126302bcab93ea8"},
     {file = "ruamel.yaml.clib-0.2.6-cp36-cp36m-win32.whl", hash = "sha256:9efef4aab5353387b07f6b22ace0867032b900d8e91674b5d8ea9150db5cae94"},
     {file = "ruamel.yaml.clib-0.2.6-cp36-cp36m-win_amd64.whl", hash = "sha256:846fc8336443106fe23f9b6d6b8c14a53d38cef9a375149d61f99d78782ea468"},
     {file = "ruamel.yaml.clib-0.2.6-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:0847201b767447fc33b9c235780d3aa90357d20dd6108b92be544427bea197dd"},
     {file = "ruamel.yaml.clib-0.2.6-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:78988ed190206672da0f5d50c61afef8f67daa718d614377dcd5e3ed85ab4a99"},
+    {file = "ruamel.yaml.clib-0.2.6-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:210c8fcfeff90514b7133010bf14e3bad652c8efde6b20e00c43854bf94fa5a6"},
     {file = "ruamel.yaml.clib-0.2.6-cp37-cp37m-win32.whl", hash = "sha256:a49e0161897901d1ac9c4a79984b8410f450565bbad64dbfcbf76152743a0cdb"},
     {file = "ruamel.yaml.clib-0.2.6-cp37-cp37m-win_amd64.whl", hash = "sha256:bf75d28fa071645c529b5474a550a44686821decebdd00e21127ef1fd566eabe"},
     {file = "ruamel.yaml.clib-0.2.6-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:a32f8d81ea0c6173ab1b3da956869114cae53ba1e9f72374032e33ba3118c233"},
     {file = "ruamel.yaml.clib-0.2.6-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:7f7ecb53ae6848f959db6ae93bdff1740e651809780822270eab111500842a84"},
+    {file = "ruamel.yaml.clib-0.2.6-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:61bc5e5ca632d95925907c569daa559ea194a4d16084ba86084be98ab1cec1c6"},
     {file = "ruamel.yaml.clib-0.2.6-cp38-cp38-win32.whl", hash = "sha256:89221ec6d6026f8ae859c09b9718799fea22c0e8da8b766b0b2c9a9ba2db326b"},
     {file = "ruamel.yaml.clib-0.2.6-cp38-cp38-win_amd64.whl", hash = "sha256:31ea73e564a7b5fbbe8188ab8b334393e06d997914a4e184975348f204790277"},
     {file = "ruamel.yaml.clib-0.2.6-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:dc6a613d6c74eef5a14a214d433d06291526145431c3b964f5e16529b1842bed"},
     {file = "ruamel.yaml.clib-0.2.6-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:1866cf2c284a03b9524a5cc00daca56d80057c5ce3cdc86a52020f4c720856f0"},
+    {file = "ruamel.yaml.clib-0.2.6-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:1b4139a6ffbca8ef60fdaf9b33dec05143ba746a6f0ae0f9d11d38239211d335"},
     {file = "ruamel.yaml.clib-0.2.6-cp39-cp39-win32.whl", hash = "sha256:3fb9575a5acd13031c57a62cc7823e5d2ff8bc3835ba4d94b921b4e6ee664104"},
     {file = "ruamel.yaml.clib-0.2.6-cp39-cp39-win_amd64.whl", hash = "sha256:825d5fccef6da42f3c8eccd4281af399f21c02b32d98e113dbc631ea6a6ecbc7"},
     {file = "ruamel.yaml.clib-0.2.6.tar.gz", hash = "sha256:4ff604ce439abb20794f05613c374759ce10e3595d1867764dd1ae675b85acbd"},
 ]
 selenium = [
     {file = "selenium-4.4.0-py3-none-any.whl", hash = "sha256:61c8b02788b66f08f2e61d5295afc956991e394815e33573072e68402ed4e8d5"},
+]
+setuptools = [
+    {file = "setuptools-65.3.0-py3-none-any.whl", hash = "sha256:2e24e0bec025f035a2e72cdd1961119f557d78ad331bb00ff82efb2ab8da8e82"},
+    {file = "setuptools-65.3.0.tar.gz", hash = "sha256:7732871f4f7fa58fb6bdcaeadb0161b2bd046c85905dbaa066bdcbcc81953b57"},
 ]
 six = [
     {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
@@ -1572,6 +1605,10 @@ typing-extensions = [
     {file = "typing_extensions-3.10.0.2-py2-none-any.whl", hash = "sha256:d8226d10bc02a29bcc81df19a26e56a9647f8b0a6d4a83924139f4a8b01f17b7"},
     {file = "typing_extensions-3.10.0.2-py3-none-any.whl", hash = "sha256:f1d25edafde516b146ecd0613dabcc61409817af4766fbbcfb8d1ad4ec441a34"},
     {file = "typing_extensions-3.10.0.2.tar.gz", hash = "sha256:49f75d16ff11f1cd258e1b988ccff82a3ca5570217d7ad8c5f48205dd99a677e"},
+]
+universal-startfile = [
+    {file = "universal-startfile-0.1.3.tar.gz", hash = "sha256:3a9d4e88a8facce00532d80a29ea652c87a68055a5e89968f4630c2479d0b383"},
+    {file = "universal_startfile-0.1.3-py3-none-any.whl", hash = "sha256:2caf08dc181eb2550d070f484b7e1e4d6e53743a9e870b9afd0b9231367bb471"},
 ]
 urllib3 = [
     {file = "urllib3-1.26.5-py2.py3-none-any.whl", hash = "sha256:753a0374df26658f99d826cfe40394a686d05985786d946fbe4165b5148f5a7c"},
