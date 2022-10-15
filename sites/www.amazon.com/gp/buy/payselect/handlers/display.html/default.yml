@@ -9,8 +9,8 @@ actions:
     locators:
       - mode: text
         value: Debit Card
-        index: 0
-        uses: 24
+        index: 1
+        uses: 23
   - verb: fill
     name: card
     locators:
@@ -39,3 +39,64 @@ actions:
         value: Continue
         index: 0
         uses: 2
+  - verb: type
+    name: tab
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+  - verb: type
+    name: return
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+  - verb: click
+    name: place_your_order
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: text
+        value: Place Your Order
+        index: 0
+        uses: -1
+      - mode: text
+        value: Place your order
+        index: 0
+        uses: -1
+      - mode: text
+        value: place your order
+        index: 0
+        uses: -1
+      - mode: value
+        value: Place Your Order
+        index: 0
+        uses: -1
+      - mode: value
+        value: Place your order
+        index: 0
+        uses: -1
+      - mode: value
+        value: place your order
+        index: 0
+        uses: -1
+      - mode: text (partial)
+        value: Place Your Order
+        index: 0
+        uses: -1
+      - mode: text (partial)
+        value: Place your order
+        index: 0
+        uses: -1
+      - mode: text (partial)
+        value: place your order
+        index: 0
+        uses: -1
+      - mode: name
+        value: placeYourOrder1
+        index: 0
+        uses: 1
