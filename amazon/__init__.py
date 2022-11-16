@@ -52,7 +52,7 @@ def reload_balance(amount: str, repeat: str):
 
         time.sleep(1)
         popover = page.browser.find_by_id("a-popover-content-1")
-        if popover.visible:
+        if popover and popover.visible:
             log.info("Closing popover")
             page.browser.find_by_css(".a-button-close").click()
             time.sleep(2)

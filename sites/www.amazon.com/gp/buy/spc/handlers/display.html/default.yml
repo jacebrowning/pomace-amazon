@@ -14,7 +14,7 @@ actions:
   - verb: click
     name: change
     locators:
-      - mode: text
-        value: Change
+      - mode: id
+        value: payChangeButtonId
         index: 0
         uses: 2

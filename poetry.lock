@@ -1,12 +1,4 @@
 [[package]]
-name = "alt-fake-useragent"
-version = "0.2.1"
-description = "A Fixed and Updated Alternative for fake-useragent"
-category = "main"
-optional = false
-python-versions = "*"
-
-[[package]]
 name = "appnope"
 version = "0.1.2"
 description = "Disable App Nap on macOS >= 10.9"
@@ -244,6 +236,14 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*"
 name = "executing"
 version = "0.10.0"
 description = "Get the currently executing AST node of a frame, and other information"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "fake-useragent"
+version = "0.1.14"
+description = "Up-to-date simple useragent faker with real world database"
 category = "main"
 optional = false
 python-versions = "*"
@@ -507,6 +507,17 @@ python-versions = ">=3.6"
 attrs = ">=19.2.0"
 
 [[package]]
+name = "packaging"
+version = "21.3"
+description = "Core utilities for Python packages"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+pyparsing = ">=2.0.2,<3.0.5 || >3.0.5"
+
+[[package]]
 name = "parse"
 version = "1.19.0"
 description = "parse() is the opposite of format()"
@@ -589,18 +600,18 @@ websockets = "10.1"
 
 [[package]]
 name = "pomace"
-version = "0.11.8"
+version = "0.11.13"
 description = "Dynamic page objects for browser automation."
 category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 
 [package.dependencies]
-alt-fake-useragent = ">=0.2.1,<0.3.0"
 beautifulsoup4 = ">=4.8.2,<5.0.0"
 bullet = ">=2.2,<3.0"
 cleo = ">=0.8.1,<0.9.0"
 datafiles = ">=2.0,<3.0"
+fake-useragent = ">=0.1.13,<0.2.0"
 faker = ">=4.1.1"
 flask-api = ">=3.0,<4.0"
 gitman = ">=3.3,<4.0"
@@ -609,6 +620,7 @@ ipdb = ">=0.13.9,<0.14.0"
 ipython = ">=8.4,<9.0"
 minilog = ">=2.0,<3.0"
 nest-asyncio = ">=1.5.5,<2.0.0"
+packaging = "*"
 parse = ">=1.14,<2.0"
 playwright = {version = ">=1.24,<2.0", markers = "platform_machine != \"armv7l\""}
 selenium = ">=4.4,<5.0"
@@ -695,6 +707,17 @@ six = ">=1.5.2"
 [package.extras]
 docs = ["sphinx", "sphinx-rtd-theme"]
 test = ["flaky", "pretend", "pytest (>=3.0.1)"]
+
+[[package]]
+name = "pyparsing"
+version = "3.0.9"
+description = "pyparsing module - Classes and methods to define and execute parsing grammars"
+category = "main"
+optional = false
+python-versions = ">=3.6.8"
+
+[package.extras]
+diagrams = ["jinja2", "railroad-diagrams"]
 
 [[package]]
 name = "pysocks"
@@ -1046,13 +1069,9 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "f37a7cd9db78fd57afb16683e688b5a61de1fa3df836396c2872fc91bf88119b"
+content-hash = "e4f05a480699c24e980828ad98f81f03eaac46f104c6d826068f3c334b6e3c4e"
 
 [metadata.files]
-alt-fake-useragent = [
-    {file = "alt-fake-useragent-0.2.1.tar.gz", hash = "sha256:19c4b12a559faf226502ecc54dc800a5fbf82ab1993e29a3a5b8d64cc5418ae5"},
-    {file = "alt_fake_useragent-0.2.1-py3-none-any.whl", hash = "sha256:30038cfa60447895886c6e2db90c79439d525474a805119d703a6b6c708ae89e"},
-]
 appnope = [
     {file = "appnope-0.1.2-py2.py3-none-any.whl", hash = "sha256:93aa393e9d6c54c5cd570ccadd8edad61ea0c4b9ea7a01409020c9aa019eb442"},
     {file = "appnope-0.1.2.tar.gz", hash = "sha256:dd83cd4b5b460958838f6eb3000c660b1f9caf2a5b1de4264e941512f603258a"},
@@ -1228,6 +1247,10 @@ executing = [
     {file = "executing-0.10.0-py2.py3-none-any.whl", hash = "sha256:9c745f80cda11eb22b62cbecf21156491a794eb56ab06f9d286a44e62822b24e"},
     {file = "executing-0.10.0.tar.gz", hash = "sha256:d1cd87c2e371e9966261410c5b3769d6df2f9e4a79a83eebd2662dd3388f9833"},
 ]
+fake-useragent = [
+    {file = "fake-useragent-0.1.14.tar.gz", hash = "sha256:470c509fc645a4fb2799a6cdf35982c3d27e57af04f601b3f37ac0b5e46c0cc7"},
+    {file = "fake_useragent-0.1.14-py3-none-any.whl", hash = "sha256:f51e7c58e3733be152f69e2d0751d19274f0d36dd7a75e6706e503163bc61d46"},
+]
 faker = [
     {file = "Faker-4.18.0-py3-none-any.whl", hash = "sha256:2ba20a4438429cb08d729175d7bb0435ef3c2c4cedc7b1ceb703ee6da8dad906"},
     {file = "Faker-4.18.0.tar.gz", hash = "sha256:6279746aed175a693108238e6d1ab8d7e26d0ec7ff8474f61025b9fdaae15d65"},
@@ -1399,6 +1422,10 @@ outcome = [
     {file = "outcome-1.1.0-py2.py3-none-any.whl", hash = "sha256:c7dd9375cfd3c12db9801d080a3b63d4b0a261aa996c4c13152380587288d958"},
     {file = "outcome-1.1.0.tar.gz", hash = "sha256:e862f01d4e626e63e8f92c38d1f8d5546d3f9cce989263c521b2e7990d186967"},
 ]
+packaging = [
+    {file = "packaging-21.3-py3-none-any.whl", hash = "sha256:ef103e05f519cdc783ae24ea4e2e0f508a9c99b2d4969652eed6a2e1ea5bd522"},
+    {file = "packaging-21.3.tar.gz", hash = "sha256:dd47c42927d89ab911e606518907cc2d3a1f38bbd026385970643f9c5b8ecfeb"},
+]
 parse = [
     {file = "parse-1.19.0.tar.gz", hash = "sha256:9ff82852bcb65d139813e2a5197627a94966245c897796760a3a2a8eb66f020b"},
 ]
@@ -1436,8 +1463,8 @@ playwright = [
     {file = "playwright-1.24.1-py3-none-win_amd64.whl", hash = "sha256:7355d00cd2cb24265779b1cd9b18d9dcac17eea4a558d57ce20df650fc766f53"},
 ]
 pomace = [
-    {file = "pomace-0.11.8-py3-none-any.whl", hash = "sha256:9293e27832bcb2e115e2bc7ea6ec724d814566b0b986eaadb3b048ab98b08d51"},
-    {file = "pomace-0.11.8.tar.gz", hash = "sha256:e5b215ea7e3872b51799af8819553af3a1660a9a28fcc5cc979606e2266a27ee"},
+    {file = "pomace-0.11.13-py3-none-any.whl", hash = "sha256:33075aa27e48f92c374784a31e0230f8f165c442edd0c5c6ca5dfdec641379fc"},
+    {file = "pomace-0.11.13.tar.gz", hash = "sha256:b2430da446cf46dbc5f576ca2103c78274b9fabd3ad1e8446fdd34466faa3d70"},
 ]
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.17-py3-none-any.whl", hash = "sha256:4cea7d09e46723885cb8bc54678175453e5071e9449821dce6f017b1d1fbfc1a"},
@@ -1470,6 +1497,10 @@ pylev = [
 pyopenssl = [
     {file = "pyOpenSSL-21.0.0-py2.py3-none-any.whl", hash = "sha256:8935bd4920ab9abfebb07c41a4f58296407ed77f04bd1a92914044b848ba1ed6"},
     {file = "pyOpenSSL-21.0.0.tar.gz", hash = "sha256:5e2d8c5e46d0d865ae933bef5230090bdaf5506281e9eec60fa250ee80600cb3"},
+]
+pyparsing = [
+    {file = "pyparsing-3.0.9-py3-none-any.whl", hash = "sha256:5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc"},
+    {file = "pyparsing-3.0.9.tar.gz", hash = "sha256:2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb"},
 ]
 pysocks = [
     {file = "PySocks-1.7.1-py27-none-any.whl", hash = "sha256:08e69f092cc6dbe92a0fdd16eeb9b9ffbc13cadfe5ca4c7bd92ffb078b293299"},
