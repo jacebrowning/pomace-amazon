@@ -10,7 +10,7 @@ actions:
       - mode: text
         value: Debit Card
         index: 1
-        uses: 23
+        uses: 22
   - verb: fill
     name: card
     locators:
