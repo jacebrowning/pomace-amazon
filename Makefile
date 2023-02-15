@@ -2,11 +2,15 @@
 all: install
 
 .PHONY: install
-install: poetry.lock
+install: .venv/.flag
+
+.venv/.flag: poetry.lock
+	@ poetry config virtualenvs.in-project true
 	poetry install
+	@ touch $@
 
 poetry.lock: pyproject.toml
-	poetry update pomace
+	poetry lock --no-update
 	@ touch $@
 
 .PHONY: ci
