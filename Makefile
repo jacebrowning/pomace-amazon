@@ -26,8 +26,8 @@ endif
 
 .PHONY: run
 run: install
-	poetry run reload-amazon-balance 0.50 10
+	poetry run reload-amazon-balance 1.00 10
 
 .PHONY: test
 test: install
-	poetry run reload-amazon-balance 0.50 1 --dev
+	poetry run reload-amazon-balance 1.00 1 --dev

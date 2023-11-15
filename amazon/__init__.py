@@ -14,8 +14,15 @@ def cli():
         sys.argv.pop()
     else:
         pomace.freeze()
+
     try:
-        reload_balance(*sys.argv[1:])
+        amount, repeat = sys.argv[1:]
+    except ValueError:
+        print("Usage: amazon-reload-balance <amount> <repeat>")
+        sys.exit(1)
+
+    try:
+        reload_balance(amount, repeat)
     except KeyboardInterrupt:
         sys.exit(0)
     except Exception as e:

@@ -17,5 +17,5 @@ $ poetry run reload-amazon-balance <amount> <repeat>
 for example:
 
 ```
-$ poetry run reload-amazon-balance 0.50 10
+$ poetry run reload-amazon-balance 1.00 10
 ```
