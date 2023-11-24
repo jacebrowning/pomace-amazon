@@ -3,7 +3,11 @@
 [![Build Status](https://travis-ci.org/jacebrowning/pomace-amazon.svg?branch=main)](https://travis-ci.org/jacebrowning/pomace-amazon)
 
 ## Installation
-
+Install poetry package, if necessary.
+```
+$ poetry install
+```
+Install amazon reload package with poetry.
 ```
 $ poetry install
 ```
