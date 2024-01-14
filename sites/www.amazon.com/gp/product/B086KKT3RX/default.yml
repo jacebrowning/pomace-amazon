@@ -10,21 +10,21 @@ actions:
       - mode: id
         value: gcui-asv-reload-form-custom-amount
         index: 0
-        uses: 26
+        uses: 25
   - verb: click
     name: buy_now
     locators:
       - mode: id
         value: gcui-asv-reload-buynow-button
         index: 0
-        uses: 25
+        uses: 24
   - verb: click
     name: sign_in
     locators:
       - mode: text
         value: Sign in
         index: 1
-        uses: 14
+        uses: 12
   - verb: type
     name: tab
     locators:
