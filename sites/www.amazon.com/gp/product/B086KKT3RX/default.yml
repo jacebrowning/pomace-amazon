@@ -24,7 +24,11 @@ actions:
       - mode: text
         value: Sign in
         index: 1
-        uses: 12
+        uses: 1
+      - mode: id
+        value: nav-link-accountList-nav-line-1
+        index: 0
+        uses: 2
   - verb: type
     name: tab
     locators:
