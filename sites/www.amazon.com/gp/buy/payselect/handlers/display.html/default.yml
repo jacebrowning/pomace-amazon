@@ -10,7 +10,7 @@ actions:
       - mode: text
         value: Debit Card
         index: 1
-        uses: 19
+        uses: 16
   - verb: fill
     name: card
     locators:
@@ -31,7 +31,11 @@ actions:
       - mode: value
         value: Use this payment method
         index: 0
-        uses: 15
+        uses: 2
+      - mode: name
+        value: ppw-widgetEvent:SetPaymentPlanSelectContinueEvent
+        index: 0
+        uses: 4
   - verb: click
     name: continue
     locators:
@@ -63,39 +67,39 @@ actions:
       - mode: text
         value: Place Your Order
         index: 0
-        uses: -1
+        uses: -2
       - mode: text
         value: Place your order
         index: 0
-        uses: -1
+        uses: -2
       - mode: text
         value: place your order
         index: 0
-        uses: -1
+        uses: -2
       - mode: value
         value: Place Your Order
         index: 0
-        uses: -1
+        uses: -2
       - mode: value
         value: Place your order
         index: 0
-        uses: -1
+        uses: -2
       - mode: value
         value: place your order
         index: 0
-        uses: -1
+        uses: -2
       - mode: text (partial)
         value: Place Your Order
         index: 0
-        uses: -1
+        uses: -2
       - mode: text (partial)
         value: Place your order
         index: 0
-        uses: -1
+        uses: -2
       - mode: text (partial)
         value: place your order
         index: 0
-        uses: -1
+        uses: -2
       - mode: name
         value: placeYourOrder1
         index: 0

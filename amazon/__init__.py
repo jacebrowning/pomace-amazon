@@ -54,7 +54,7 @@ def reload_balance(amount: str, repeat: str):
 
     for index in range(int(repeat)):
         log.info(f"Selecting amount ${amount}")
-        page = page.fill_amount(amount).type_tab(wait=0).click_buy_now()
+        page = page.fill_amount(amount, wait=1).type_tab(wait=1).click_buy_now()
         assert f"${amount}" in page
 
         time.sleep(1)
@@ -65,27 +65,20 @@ def reload_balance(amount: str, repeat: str):
             time.sleep(2)
 
         suffix = settings.card[-4:]
-        if suffix not in page:
-            log.info(f"Selecting card ending in {suffix}")
-            page = page.click_change()
-            page.browser.find_by_text(f"ending in {suffix}").click()
-            page = page.type_tab(wait=1).type_return()
-        else:
-            page = page.click_use_this_payment_method(wait=1)
+        log.info(f"Selecting card ending in {suffix}")
+        page = page.click_change()
+        page.browser.find_by_text(f"ending in {suffix}").click()
 
-        if "By placing your order" not in page:
-            log.info("Choosing payment method")
-            page = page.click_card(wait=1)
+        verify = page.browser.find_by_text("Verify your card")
+        if verify and verify.visible:
+            log.info("Handling card verification")
+            page = page.fill_card(settings.card).click_verify_card(wait=1)
 
-            if page.browser.find_by_text("Verify your card").first.visible:
-                log.info("Handling card verification")
-                page = page.fill_card(settings.card).click_verify_card(wait=1)
-
-            page = page.click_use_this_payment_method(wait=1)
-            assert "By placing your order" in page
+        log.info("Confirming payment method")
+        page = page.click_use_this_payment_method()
 
         log.info("Placing order")
-        page = page.click_place_your_order(wait=2)
+        page = page.click_place_your_order()
 
         log.info(f"Balance reloaded {index + 1} time(s)")
         page = pomace.visit("https://www.amazon.com/asv/reload/order")

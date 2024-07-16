@@ -8,9 +8,9 @@ actions:
     name: amount
     locators:
       - mode: id
-        value: gcui-asv-reload-form-custom-amount
+        value: gc-ui-form-custom-amount
         index: 0
-        uses: 25
+        uses: 2
   - verb: click
     name: buy_now
     locators:
