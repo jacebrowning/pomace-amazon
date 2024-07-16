@@ -31,3 +31,7 @@ run: install
 .PHONY: test
 test: install
 	poetry run reload-amazon-balance 5.00 1 --dev
+
+.PHONY: clean
+clean:
+	rm -rf .venv
