@@ -36,3 +36,10 @@ actions:
         value: ''
         index: 0
         uses: 0
+  - verb: click
+    name: one_time_reload
+    locators:
+      - mode: text
+        value: One Time Reload
+        index: 1
+        uses: 2

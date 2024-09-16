@@ -104,3 +104,46 @@ actions:
         value: placeYourOrder1
         index: 0
         uses: 1
+  - verb: click
+    name: change
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: text
+        value: Change
+        index: 0
+        uses: -1
+      - mode: text
+        value: Change
+        index: 0
+        uses: -1
+      - mode: text
+        value: change
+        index: 0
+        uses: -1
+      - mode: value
+        value: Change
+        index: 0
+        uses: -1
+      - mode: value
+        value: Change
+        index: 0
+        uses: -1
+      - mode: value
+        value: change
+        index: 0
+        uses: -1
+      - mode: text (partial)
+        value: Change
+        index: 0
+        uses: -1
+      - mode: text (partial)
+        value: Change
+        index: 0
+        uses: -1
+      - mode: text (partial)
+        value: change
+        index: 0
+        uses: -1

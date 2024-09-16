@@ -53,6 +53,9 @@ def reload_balance(amount: str, repeat: str):
         page = page.click_not_now()
 
     for index in range(int(repeat)):
+        log.info("Selecting one-time reload")
+        page = page.click_one_time_reload(wait=1)
+
         log.info(f"Selecting amount ${amount}")
         page = page.fill_amount(amount, wait=1).type_tab(wait=1).click_buy_now()
         assert f"${amount}" in page
@@ -66,7 +69,6 @@ def reload_balance(amount: str, repeat: str):
 
         suffix = settings.card[-4:]
         log.info(f"Selecting card ending in {suffix}")
-        page = page.click_change()
         page.browser.find_by_text(f"ending in {suffix}").click()
 
         verify = page.browser.find_by_text("Verify your card")
