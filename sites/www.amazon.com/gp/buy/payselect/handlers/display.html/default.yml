@@ -103,7 +103,7 @@ actions:
       - mode: name
         value: placeYourOrder1
         index: 0
-        uses: 1
+        uses: 0
   - verb: click
     name: change
     locators:
@@ -114,36 +114,36 @@ actions:
       - mode: text
         value: Change
         index: 0
-        uses: -1
+        uses: -3
       - mode: text
         value: Change
         index: 0
-        uses: -1
+        uses: -3
       - mode: text
         value: change
         index: 0
-        uses: -1
+        uses: -3
       - mode: value
         value: Change
         index: 0
-        uses: -1
+        uses: -3
       - mode: value
         value: Change
         index: 0
-        uses: -1
+        uses: -3
       - mode: value
         value: change
         index: 0
-        uses: -1
+        uses: -3
       - mode: text (partial)
         value: Change
         index: 0
-        uses: -1
+        uses: -3
       - mode: text (partial)
         value: Change
         index: 0
-        uses: -1
+        uses: -3
       - mode: text (partial)
         value: change
         index: 0
-        uses: -1
+        uses: -3

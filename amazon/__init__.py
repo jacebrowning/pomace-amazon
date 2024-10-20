@@ -68,6 +68,9 @@ def reload_balance(amount: str, repeat: str):
             time.sleep(2)
 
         suffix = settings.card[-4:]
+        if suffix not in page:
+            log.info("Changing payment method")
+            page = page.click_change(wait=1)
         log.info(f"Selecting card ending in {suffix}")
         page.browser.find_by_text(f"ending in {suffix}").click()
 
