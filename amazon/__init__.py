@@ -54,11 +54,14 @@ def reload_balance(amount: str, repeat: str):
 
     for index in range(int(repeat)):
         log.info("Selecting one-time reload")
-        page = page.click_one_time_reload(wait=1)
+        page = page.click_one_time_reload(wait=2)
 
         log.info(f"Selecting amount ${amount}")
-        page = page.fill_amount(amount, wait=1).type_tab(wait=1).click_buy_now()
+        page = page.fill_amount(amount, wait=1).type_tab(wait=1)
         assert f"${amount}" in page
+
+        log.info("Clicking buy now")
+        page = page.click_buy_now()
 
         time.sleep(1)
         popover = page.browser.find_by_id("a-popover-content-1")

@@ -1,0 +1,40 @@
+locators:
+  inclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0
+  exclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0
+actions:
+  - verb: ''
+    name: ''
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+  - verb: type
+    name: tab
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+  - verb: click
+    name: buy_now
+    locators:
+      - mode: name
+        value: submit.gc-buy-now
+        index: 1
+        uses: 2
+  - verb: fill
+    name: amount
+    locators:
+      - mode: id
+        value: gc-ui-form-custom-amount
+        index: 0
+        uses: 2

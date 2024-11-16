@@ -27,28 +27,28 @@ actions:
       - mode: name
         value: amount
         index: 0
-        uses: -1
+        uses: -2
       - mode: name
         value: amount
         index: 0
-        uses: -1
+        uses: -2
       - mode: id
         value: amount
         index: 0
-        uses: -1
+        uses: -2
       - mode: id
         value: amount
         index: 0
-        uses: -1
+        uses: -2
       - mode: aria-label
         value: Amount
         index: 0
-        uses: -1
+        uses: -2
       - mode: css
         value: '[placeholder="Amount"]'
         index: 0
-        uses: -1
+        uses: -2
       - mode: id
         value: Amount
         index: 0
-        uses: -1
+        uses: -2

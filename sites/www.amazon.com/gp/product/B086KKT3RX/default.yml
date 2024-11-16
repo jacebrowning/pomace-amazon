@@ -21,10 +21,6 @@ actions:
   - verb: click
     name: sign_in
     locators:
-      - mode: text
-        value: Sign in
-        index: 1
-        uses: 1
       - mode: id
         value: nav-link-accountList-nav-line-1
         index: 0
@@ -39,7 +35,7 @@ actions:
   - verb: click
     name: one_time_reload
     locators:
-      - mode: text
-        value: One Time Reload
-        index: 1
+      - mode: id
+        value: reload_type_0
+        index: 0
         uses: 2

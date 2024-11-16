@@ -30,7 +30,7 @@ run: install
 
 .PHONY: test
 test: install
-	poetry run reload-amazon-balance 5.00 1 --dev
+	poetry run reload-amazon-balance 5.00 2 --dev
 
 .PHONY: clean
 clean:
