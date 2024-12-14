@@ -67,43 +67,43 @@ actions:
       - mode: text
         value: Place Your Order
         index: 0
-        uses: -2
+        uses: -5
       - mode: text
         value: Place your order
         index: 0
-        uses: -2
+        uses: -5
       - mode: text
         value: place your order
         index: 0
-        uses: -2
+        uses: -5
       - mode: value
         value: Place Your Order
         index: 0
-        uses: -2
+        uses: -5
       - mode: value
         value: Place your order
         index: 0
-        uses: -2
+        uses: -5
       - mode: value
         value: place your order
         index: 0
-        uses: -2
+        uses: -5
       - mode: text (partial)
         value: Place Your Order
         index: 0
-        uses: -2
+        uses: -5
       - mode: text (partial)
         value: Place your order
         index: 0
-        uses: -2
+        uses: -5
       - mode: text (partial)
         value: place your order
         index: 0
-        uses: -2
+        uses: -5
       - mode: name
         value: placeYourOrder1
         index: 0
-        uses: 0
+        uses: -4
   - verb: click
     name: change
     locators:

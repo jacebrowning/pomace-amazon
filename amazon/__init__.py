@@ -76,8 +76,9 @@ def reload_balance(amount: str, repeat: str):
             page = page.click_change(wait=1)
         log.info(f"Selecting card ending in {suffix}")
         page.browser.find_by_text(f"ending in {suffix}").click()
+        time.sleep(2)
 
-        verify = page.browser.find_by_text("Verify your card")
+        verify = page.browser.find_by_text("Verify card")
         if verify and verify.visible:
             log.info("Handling card verification")
             page = page.fill_card(settings.card).click_verify_card(wait=1)
