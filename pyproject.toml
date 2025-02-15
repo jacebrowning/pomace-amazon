@@ -10,9 +10,9 @@ license = "MIT"
 
 python = "^3.9"
 
-pomace = "~0.12.10"
+pomace = "~0.12.11"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 
 black = "^22.1"
 isort = "^5.10"

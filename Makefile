@@ -10,7 +10,7 @@ install: .venv/.flag
 	@ touch $@
 
 poetry.lock: pyproject.toml
-	poetry lock --no-update
+	poetry lock
 	@ touch $@
 
 .PHONY: ci
