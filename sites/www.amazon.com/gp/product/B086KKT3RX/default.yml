@@ -10,7 +10,7 @@ actions:
       - mode: id
         value: gc-ui-form-custom-amount
         index: 0
-        uses: 1
+        uses: 2
   - verb: click
     name: buy_now
     locators:
