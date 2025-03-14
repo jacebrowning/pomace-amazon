@@ -1,6 +1,6 @@
 # Amazon Balance Reloader
 
-[![Build Status](https://travis-ci.org/jacebrowning/pomace-amazon.svg?branch=main)](https://travis-ci.org/jacebrowning/pomace-amazon)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/jacebrowning/pomace-amazon/main.yml?branch=main&label=linux)](https://github.com/jacebrowning/pomace-amazon/actions)
 
 ## Installation
 
