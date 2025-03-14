@@ -1,0 +1,24 @@
+{
+  "files.exclude": {
+    "**/*.pyc": true,
+    "**/.ipynb_checkpoints": true,
+    "**/__pycache__": true,
+    "**/tmp/": true,
+    "*.egg-info": true,
+    ".cache/": true,
+    ".venv/": true,
+    "dist/": true,
+    "geckodriver.log": true,
+    "htmlcov/": true,
+    "pip-wheel-metadata/": true,
+    "prof/": true,
+    "site/": true
+  },
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "isort",
+    "pyproject",
+    "venv",
+    "virtualenvs"
+  ],
+}
