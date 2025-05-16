@@ -5,7 +5,11 @@ actions:
       - mode: id
         value: ap_email
         index: 0
-        uses: 36
+        uses: 1
+      - mode: id
+        value: ap_email_login
+        index: 0
+        uses: 2
   - verb: click
     name: continue
     locators:

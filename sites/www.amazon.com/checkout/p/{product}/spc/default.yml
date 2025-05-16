@@ -1,0 +1,73 @@
+locators:
+  inclusions:
+    -
+  exclusions:
+    -
+actions:
+  - verb: click
+    name: card
+    locators:
+      - mode: text
+        value: Debit Card
+        index: 1
+        uses: 16
+  - verb: fill
+    name: card
+    locators:
+      - mode: css
+        value: '[maxlength="30"]'
+        index: 0
+        uses: 5
+  - verb: click
+    name: verify_card
+    locators:
+      - mode: text
+        value: Verify card
+        index: 0
+        uses: 12
+  - verb: click
+    name: use_this_payment_method
+    locators:
+      - mode: value
+        value: Use this payment method
+        index: 0
+        uses: 1
+      - mode: name
+        value: ppw-widgetEvent:SetPaymentPlanSelectContinueEvent
+        index: 0
+        uses: 3
+  - verb: click
+    name: continue
+    locators:
+      - mode: value
+        value: Continue
+        index: 0
+        uses: 2
+  - verb: type
+    name: tab
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+  - verb: type
+    name: return
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+  - verb: click
+    name: place_your_order
+    locators:
+      - mode: name
+        value: placeYourOrder1
+        index: 0
+        uses: 2
+  - verb: click
+    name: change
+    locators:
+      - mode: text (partial)
+        value: Change
+        index: 0
+        uses: 2

@@ -1,0 +1,26 @@
+locators:
+  inclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0
+  exclusions:
+    - mode: ''
+      value: ''
+      index: 0
+      uses: 0
+actions:
+  - verb: ''
+    name: ''
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+  - verb: click
+    name: use_this_payment_method
+    locators:
+      - mode: css
+        value: '[data-testid="bottom-continue-button"]'
+        index: 0
+        uses: 2
