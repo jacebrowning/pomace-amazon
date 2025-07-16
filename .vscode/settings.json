@@ -21,4 +21,5 @@
     "venv",
     "virtualenvs"
   ],
+  "makefile.configureOnOpen": false,
 }
