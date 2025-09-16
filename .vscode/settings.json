@@ -17,6 +17,7 @@
   "editor.formatOnSave": true,
   "cSpell.words": [
     "isort",
+    "Jace",
     "pyproject",
     "venv",
     "virtualenvs"

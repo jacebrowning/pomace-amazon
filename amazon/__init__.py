@@ -54,7 +54,8 @@ def reload_balance(amount: str, repeat: str):
 
     for index in range(int(repeat)):
         log.info("Selecting one-time reload")
-        page = page.click_one_time_reload(wait=4)
+        page = page.click_one_time_reload()
+        time.sleep(2)
 
         log.info(f"Entering amount ${amount}")
         page = page.fill_amount(amount, wait=2).type_tab(wait=1)
