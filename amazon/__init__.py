@@ -90,5 +90,6 @@ def reload_balance(amount: str, repeat: str):
         log.info("Placing order")
         page = page.click_place_your_order()
 
-        log.info(f"Balance reloaded {index + 1} time(s)")
+        s = "s" if index == 0 else ""
+        log.info(f"Balance reloaded {index + 1} time{s}")
         page = pomace.visit("https://www.amazon.com/asv/reload/order")
